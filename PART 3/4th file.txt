@@ -1,0 +1,29 @@
+SELECT 
+  v.Card_Status,
+  p.Promo_Type,
+  s.Service_Type,
+  f.Feedback_Status,
+  r.Return_Status,
+  c.Request_Status,
+  b.Branch_Status,
+  pe.First_Name
+FROM VIP_CARD v
+JOIN VIP_CARD_PROMOTION vp ON v.Card_ID = vp.Card_ID AND v.Card_Ref_Number = vp.Card_Ref_Number
+JOIN PROMOTION p ON vp.Promotion_ID = p.Promotion_ID AND vp.Promotion_Ref_Number = p.Promotion_Ref_Number
+JOIN PROMOTION_SERVICE ps ON p.Promotion_ID = ps.Promotion_ID AND p.Promotion_Ref_Number = ps.Promotion_Ref_Number
+JOIN SERVICE s ON ps.Service_ID = s.Service_ID AND ps.Service_Ref_Number = s.Service_Ref_Number
+JOIN SERVICE_FEEDBACK sf ON s.Service_ID = sf.Service_ID AND s.Service_Ref_Number = sf.Service_Ref_Number
+JOIN FEEDBACK f ON sf.Feedback_ID = f.Feedback_ID AND sf.Feedback_Ref_Number = f.Feedback_Ref_Number
+JOIN RETURN r ON f.Return_ID = r.Return_ID AND f.Return_Ref_Number = r.Return_Ref_Number
+JOIN CUSTOM_ITEM_REQUEST_FEEDBACK cf ON f.Feedback_ID = cf.Feedback_ID AND f.Feedback_Ref_Number = cf.Feedback_Ref_Number
+JOIN CUSTOM_ITEM_REQUEST c ON cf.Custom_ID = c.Custom_ID AND cf.Custom_Ref_Number = c.Custom_Ref_Number
+JOIN BRANCH_CUSTOM_ITEM_REQUEST bc ON c.Custom_ID = bc.Custom_ID AND c.Custom_Ref_Number = bc.Custom_Ref_Number
+JOIN BRANCH b ON bc.Branch_ID = b.Branch_ID AND bc.Branch_Ref_Number = b.Branch_Ref_Number
+JOIN PERSON_CUSTOM_ITEM_REQUEST pc ON c.Custom_ID = pc.Custom_ID AND c.Custom_Ref_Number = pc.Custom_Ref_Number
+JOIN PERSON pe ON pc.Person_ID = pe.Person_ID AND pc.Person_Ref_Number = pe.Person_Ref_Number
+WHERE 
+  v.Card_Status = 'Active' AND
+  p.Promo_Type = 'VIP' AND
+  r.Return_Status = 'Approved' AND
+  b.Branch_Status = 'Active'
+ORDER BY pe.First_Name DESC;

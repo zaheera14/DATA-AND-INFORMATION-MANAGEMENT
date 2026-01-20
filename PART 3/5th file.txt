@@ -1,0 +1,21 @@
+CREATE OR REPLACE VIEW VIEW_PRODUCT_SUPPLIER_WAREHOUSE AS
+SELECT 
+    P.Product_ID, 
+    S.Supplier_ID, 
+    W.Warehouse_ID
+FROM 
+    PRODUCT P
+JOIN 
+    SUPPLIER_PRODUCT SP ON P.Product_ID = SP.Product_ID AND P.Product_SKU = SP.Product_SKU AND P.Product_Barcode = SP.Product_Barcode
+JOIN 
+    SUPPLIER S ON SP.Supplier_ID = S.Supplier_ID AND SP.Supplier_Ref_Number = S.Supplier_Ref_Number
+JOIN 
+    SUPPLIER_WAREHOUSE SW ON S.Supplier_ID = SW.Supplier_ID AND S.Supplier_Ref_Number = SW.Supplier_Ref_Number
+JOIN 
+    WAREHOUSE W ON SW.Warehouse_ID = W.Warehouse_ID AND SW.Warehouse_Ref_Number = W.Warehouse_Ref_Number
+WHERE 
+    W.Warehouse_Status = 'Completed';
+
+SELECT * FROM VIEW_PRODUCT_SUPPLIER_WAREHOUSE;
+
+

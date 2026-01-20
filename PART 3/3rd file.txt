@@ -1,0 +1,16 @@
+SELECT 
+  P.Product_Name, P.Product_Category,
+  D.Section_Name, D.Floor_Location,
+  S.Staff_Position, S.Salary_Grade,
+  I.Inventory_Type, I.Condition_Status,
+  W.Warehouse_Name, W.Warehouse_Status,
+  B.Branch_Name, B.Service_Offered
+FROM PRODUCT P
+JOIN PRODUCT_DISPLAY_SECTION PD ON P.Product_ID = PD.Product_ID AND P.Product_SKU = PD.Product_SKU AND P.Product_Barcode = PD.Product_Barcode
+JOIN DISPLAY_SECTION D ON PD.Display_ID = D.Display_ID AND PD.Display_Ref_Number = D.Display_Ref_Number
+JOIN STAFF_DISPLAY_SECTION SD ON D.Display_ID = SD.Display_ID AND D.Display_Ref_Number = SD.Display_Ref_Number
+JOIN STAFF S ON SD.Staff_ID = S.Staff_ID AND SD.Staff_Ref_Number = S.Staff_Ref_Number
+JOIN INVENTORY I ON S.Inventory_ID = I.Inventory_ID AND S.Inventory_Ref_Number = I.Inventory_Ref_Number
+JOIN WAREHOUSE W ON I.Warehouse_ID = W.Warehouse_ID AND I.Warehouse_Ref_Number = W.Warehouse_Ref_Number
+JOIN BRANCH B ON I.Branch_ID = B.Branch_ID AND I.Branch_Ref_Number = B.Branch_Ref_Number
+WHERE S.Employment_Status = 'Active' AND I.Condition_Status = 'Good' AND B.Branch_Status = 'Active';

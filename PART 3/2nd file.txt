@@ -1,0 +1,7 @@
+SELECT S.Company_Name, COUNT(O.Order_ID) AS Total_Orders
+FROM SUPPLIER S
+JOIN ORDERS O ON S.Supplier_ID = O.Supplier_ID AND S.Supplier_Ref_Number = O.Supplier_Ref_Number
+JOIN DELIVERY D ON O.Delivery_ID = D.Delivery_ID AND O.Delivery_Ref_Number = D.Delivery_Ref_Number
+JOIN PAYMENT P ON S.Supplier_ID = P.Supplier_ID AND S.Supplier_Ref_Number = P.Supplier_Ref_Number
+WHERE D.Delivery_Type = 'Standard' AND P.Payment_Status = 'Completed'
+GROUP BY S.Company_Name;
