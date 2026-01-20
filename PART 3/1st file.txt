@@ -1,0 +1,14 @@
+SELECT 
+    PRODUCT.Product_Name, 
+    SUPPLIER.Company_Name
+FROM 
+    PRODUCT
+JOIN 
+    SUPPLIER_PRODUCT 
+    ON PRODUCT.Product_ID = SUPPLIER_PRODUCT.Product_ID 
+    AND PRODUCT.Product_SKU = SUPPLIER_PRODUCT.Product_SKU 
+    AND PRODUCT.Product_Barcode = SUPPLIER_PRODUCT.Product_Barcode
+JOIN 
+    SUPPLIER 
+    ON SUPPLIER.Supplier_ID = SUPPLIER_PRODUCT.Supplier_ID 
+    AND SUPPLIER.Supplier_Ref_Number = SUPPLIER_PRODUCT.Supplier_Ref_Number;
