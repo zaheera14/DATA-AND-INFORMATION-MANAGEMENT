@@ -1,0 +1,822 @@
+CREATE TABLE PERSON (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+First_Name VARCHAR (50),
+Last_Name VARCHAR (50),
+IC_No VARCHAR (20),
+Contact_Number VARCHAR (20),
+Email VARCHAR (100), 
+PRIMARY KEY (Person_ID, Person_Ref_Number)
+);
+
+CREATE TABLE CUSTOMER (
+Customer_ID VARCHAR (20),
+Customer_Ref_Number VARCHAR (30), 
+Customer_Title VARCHAR (10), 
+Customer_Address VARCHAR (255), 
+Contact_Preference VARCHAR (20), 
+Is_VIP VARCHAR(3), 
+Preferred_Branch VARCHAR (20), 
+First_Visited_Date DATE, 
+Last_Purchased_Date DATE,
+Customer_Description VARCHAR (255), 
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+PRIMARY KEY (Customer_ID, Customer_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number)
+);
+
+CREATE TABLE SHIFT (
+Shift_ID VARCHAR (20),
+Shift_Ref_Number VARCHAR (30), 
+Shift_Start VARCHAR (5),
+Shift_End VARCHAR (5),
+Day_Of_Week VARCHAR (15),
+Shift_Type VARCHAR (20),
+Is_Overtime VARCHAR(3),
+Clock_In_Status VARCHAR (20),
+Logged_Hours DECIMAL(5,2),
+Break_Schedule VARCHAR (20),
+PRIMARY KEY (Shift_ID, Shift_Ref_Number)
+);
+
+CREATE TABLE SUPPLIER (
+Supplier_ID	VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Company_Name VARCHAR (100), 
+Representative_Name VARCHAR (100), 
+Supplier_Email	VARCHAR (100), 
+Supplied_Product VARCHAR (255), 
+Contract_Start_Date DATE, 
+Contract_End_Date DATE, 
+Contract_Status	VARCHAR (20), 
+Supplier_Rating FLOAT,
+PRIMARY KEY (Supplier_ID, Supplier_Ref_Number)
+);
+
+CREATE TABLE MAINTENANCE_LOG (
+Maintenance_ID VARCHAR (20),
+Maintenance_Ref_Number VARCHAR (30), 
+Maintenance_Type VARCHAR (100), 
+Date_Reported DATE, 
+Date_Resolved DATE, 
+Service_Company	VARCHAR (100),
+Service_Contact	VARCHAR (12), 
+Maintenance_Cost FLOAT, 
+Maintenance_Status VARCHAR (20),
+Remarks	VARCHAR (255),
+PRIMARY KEY (Maintenance_ID, Maintenance_Ref_Number)
+);
+
+CREATE TABLE PRODUCT (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30), 
+Product_Barcode	VARCHAR (20),
+Product_Name VARCHAR (100), 
+Product_Category VARCHAR (100), 
+Product_Brand VARCHAR (100), 
+Product_Price FLOAT,
+Stock_Count INT, 
+Stock_Reorder VARCHAR(3), 
+Warranty_Period INT,
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode)
+);
+
+CREATE TABLE PROMOTION (
+Promotion_ID VARCHAR (20), 
+Promotion_Ref_Number VARCHAR (30), 
+Promo_Name VARCHAR (100), 
+Promo_Type VARCHAR (50), 
+Promo_Start_Date DATE,
+Promo_End_Date DATE, 
+Promo_Rate DECIMAL (5,2), 
+Target_Category	VARCHAR (50),  
+Stock_Allocated	INT NULL,
+Promo_Description VARCHAR (255), 
+PRIMARY KEY (Promotion_ID, Promotion_Ref_Number)
+);
+
+CREATE TABLE BRANCH(
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30), 
+Branch_Name VARCHAR (100),
+Branch_Contact VARCHAR (12), 
+Staff_Count INT, 
+Sales_Target FLOAT,
+Sales_Made FLOAT, 
+Daily_Customer_Traffic INT, 
+Service_Offered	VARCHAR (255), 
+Branch_Status VARCHAR (20), 
+Branch_Address VARCHAR (255),
+Maintenance_ID VARCHAR (20),
+Maintenance_Ref_Number VARCHAR (30),
+PRIMARY KEY (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Maintenance_ID, Maintenance_Ref_Number) REFERENCES MAINTENANCE_LOG (Maintenance_ID, Maintenance_Ref_Number)
+);
+
+CREATE TABLE DISPLAY_SECTION (
+Display_ID VARCHAR (20),
+Display_Ref_Number VARCHAR (30),
+Section_Name VARCHAR (50), 
+Floor_Location VARCHAR (20),
+Shelf_Count INT, 
+Max_Capacity INT, 
+Assigned_Category VARCHAR (50), 
+Refill_Interval	VARCHAR(20), 
+Last_Updated_Date DATE, 
+Refill_Needed VARCHAR(3),  
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30),
+PRIMARY KEY (Display_ID, Display_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number)
+);
+
+CREATE TABLE WAREHOUSE (
+Warehouse_ID VARCHAR (20), 
+Warehouse_Ref_Number VARCHAR (30),
+Warehouse_Name VARCHAR (100), 
+Warehouse_Contact VARCHAR (20), 
+Filled_Capacity	FLOAT, 
+Inventory_Value	FLOAT, 
+Available_Capacity FLOAT, 
+Max_Capacity	FLOAT, 
+Warehouse_Status VARCHAR (50),
+Warehouse_Address VARCHAR(255), 
+Maintenance_ID VARCHAR (20),
+Maintenance_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Warehouse_ID, Warehouse_Ref_Number),
+FOREIGN KEY (Maintenance_ID, Maintenance_Ref_Number) REFERENCES MAINTENANCE_LOG (Maintenance_ID, Maintenance_Ref_Number)
+);
+
+CREATE TABLE INVENTORY (
+Inventory_ID VARCHAR (20), 
+Inventory_Ref_Number VARCHAR (30),
+Inventory_Type VARCHAR (100), 
+Entry_Date DATE, 
+Exit_Date DATE,
+Current_Quantity INT, 
+Minimum_Quantity_Needed	INT, 
+Restock_Needed VARCHAR(3),  
+Shelf_Location VARCHAR (100),
+Condition_Status VARCHAR (50), 
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30), 
+Warehouse_ID VARCHAR (20), 
+Warehouse_Ref_Number VARCHAR (30),
+PRIMARY KEY (Inventory_ID, Inventory_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Warehouse_ID, Warehouse_Ref_Number) REFERENCES WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number)
+);
+
+CREATE TABLE STOCK_ADJUSTMENT (
+Adjustment_ID VARCHAR (20), 
+Adjustment_Ref_Number VARCHAR (30), 
+Adjustment_Date	DATE, 
+Adjustment_Reason VARCHAR (100), 
+Adjustment_Method VARCHAR (50), 
+Quantity_Before INT, 
+Quantity_After INT, 
+Adjustment_Description VARCHAR(255),
+Adjustment_Status VARCHAR (50), 
+Evidence_Attached VARCHAR(3), 
+Inventory_ID VARCHAR (20), 
+Inventory_Ref_Number VARCHAR (30),
+PRIMARY KEY (Adjustment_ID, Adjustment_Ref_Number),
+FOREIGN KEY (Inventory_ID, Inventory_Ref_Number) REFERENCES INVENTORY (Inventory_ID, Inventory_Ref_Number)
+);
+
+CREATE TABLE DELIVERY (
+Delivery_ID VARCHAR (20),
+Delivery_Ref_Number VARCHAR (30), 
+Delivery_Date DATE, 
+Delivery_Type VARCHAR (20), 
+Delivery_Address VARCHAR (255),
+Vehicle_Plate VARCHAR (20), 
+Vehicle_Model VARCHAR (50), 
+Item_Count INT,
+Delivery_Status	VARCHAR (20),
+Fragile_Indicator VARCHAR(3), 
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30), 
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+PRIMARY KEY (Delivery_ID, Delivery_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number)
+);
+
+CREATE TABLE ORDERS (
+Order_ID VARCHAR (20), 
+Order_Ref_Number VARCHAR (30), 
+Order_Date DATE, 
+Order_Due DATE, 
+Order_Channel VARCHAR (50), 
+Quantity_Ordered INT,
+Delivery_Required VARCHAR(3), 
+Discount_Applied VARCHAR(3), 
+Order_Status VARCHAR (50), 
+Return_Needed VARCHAR(3),
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Delivery_ID VARCHAR (20),
+Delivery_Ref_Number VARCHAR (30),
+PRIMARY KEY (Order_ID, Order_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Delivery_ID, Delivery_Ref_Number) REFERENCES DELIVERY (Delivery_ID, Delivery_Ref_Number)
+);
+
+CREATE TABLE PAYMENT (
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30),
+Total_Amount DECIMAL (10,2), 
+Discounted_Amount DECIMAL (10,2), 
+Payment_Method VARCHAR (30), 
+Payment_Channel	VARCHAR (30), 
+Payment_Status VARCHAR (30), 
+Issued_Date DATE, 
+Completed_Date	DATE,
+Payment_Description VARCHAR (255), 
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Order_ID VARCHAR (20), 
+Order_Ref_Number VARCHAR (30),
+PRIMARY KEY (Payment_ID, Payment_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Order_ID, Order_Ref_Number) REFERENCES ORDERS (Order_ID, Order_Ref_Number)
+);
+
+CREATE TABLE VIP_CARD (
+Card_ID	VARCHAR (20), 
+Card_Ref_Number VARCHAR (30), 
+Issue_Date DATE, 
+Expiry_Date DATE,
+Card_Status VARCHAR (20),
+Points_Balance FLOAT, 
+Eligible_Discount FLOAT, 
+Renewed_Count INT, 
+Used_Count INT, 
+Total_Amount_Saved FLOAT,
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30),
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30), 
+Inventory_ID VARCHAR (20), 
+Inventory_Ref_Number VARCHAR (30),
+PRIMARY KEY (Card_ID, Card_Ref_Number),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Inventory_ID, Inventory_Ref_Number) REFERENCES INVENTORY (Inventory_ID, Inventory_Ref_Number)
+);
+
+CREATE TABLE SERVICE (
+Service_ID VARCHAR (20), 
+Service_Ref_Number VARCHAR (30),
+Service_Type VARCHAR (100),
+Service_Status VARCHAR (20),
+Unit_Price FLOAT, 
+Service_Duration INT,
+Material_Provided VARCHAR(3), 
+Extra_Charges FLOAT, 
+Deposit_Required VARCHAR(3), 
+Service_Description VARCHAR (255), 
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30),
+PRIMARY KEY (Service_ID, Service_Ref_Number),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number)
+);
+
+CREATE TABLE CUSTOM_ITEM_REQUEST (
+Custom_ID VARCHAR (20), 
+Custom_Ref_Number VARCHAR (30), 
+Item_Type VARCHAR (100), 
+Material_Choice	VARCHAR (100),
+Text_Engraved VARCHAR(255),
+Quantity_Needed INT, 
+Estimate_Cost FLOAT, 
+Request_Date DATE, 
+Completion_Date	DATE, 
+Request_Status VARCHAR (50), 
+Collection_Method VARCHAR (50),
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30),
+PRIMARY KEY (Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number)
+);
+
+CREATE TABLE RETURN (
+Return_ID VARCHAR (20), 
+Return_Ref_Number VARCHAR (30), 
+Return_Date DATE, 
+Return_Reason VARCHAR(255),
+Return_Condition VARCHAR (50), 
+Return_Status VARCHAR (30),
+Refund_Needed VARCHAR(3), 
+Refund_Amount DECIMAL (10,2), 
+Refund_Method VARCHAR (30),
+Refund_Date DATE, 
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30),
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+PRIMARY KEY (Return_ID, Return_Ref_Number),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number)
+);
+
+CREATE TABLE FEEDBACK (
+Feedback_ID VARCHAR (20), 
+Feedback_Ref_Number VARCHAR (30), 
+Feedback_Type VARCHAR (30), 
+Date_Received DATE, 
+Description VARCHAR(255), 
+Urgency_Level VARCHAR (20),
+Feedback_Status	VARCHAR (30), 
+Action_Taken VARCHAR(255) NULL,
+Feedback_Rating	INT NULL,
+Follow_Up_Required VARCHAR(3),
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Delivery_ID VARCHAR (20),
+Delivery_Ref_Number VARCHAR (30), 
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30),
+Return_ID VARCHAR (20), 
+Return_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Delivery_ID, Delivery_Ref_Number) REFERENCES DELIVERY (Delivery_ID, Delivery_Ref_Number),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number),
+FOREIGN KEY (Return_ID, Return_Ref_Number) REFERENCES RETURN (Return_ID, Return_Ref_Number)
+);
+
+CREATE TABLE STAFF (
+Staff_ID VARCHAR (20),
+Staff_Ref_Number VARCHAR (30), 
+Staff_Position VARCHAR (50), 
+Bank_Account VARCHAR (30), 
+Salary_Grade VARCHAR (10), 
+Salary_Amount FLOAT, 
+Staff_Department VARCHAR (50), 
+Employment_Status VARCHAR (20), 
+Hired_Date DATE, 
+Performance_Rating FLOAT, 
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Inventory_ID VARCHAR (20), 
+Inventory_Ref_Number VARCHAR (30),
+Adjustment_ID VARCHAR (20), 
+Adjustment_Ref_Number VARCHAR (30), 
+Maintenance_ID VARCHAR (20),
+Maintenance_Ref_Number VARCHAR (30),
+Warehouse_ID VARCHAR (20), 
+Warehouse_Ref_Number VARCHAR (30),
+PRIMARY KEY (Staff_ID, Staff_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Inventory_ID, Inventory_Ref_Number) REFERENCES INVENTORY (Inventory_ID, Inventory_Ref_Number),
+FOREIGN KEY (Adjustment_ID, Adjustment_Ref_Number) REFERENCES STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number),
+FOREIGN KEY (Maintenance_ID, Maintenance_Ref_Number) REFERENCES MAINTENANCE_LOG (Maintenance_ID, Maintenance_Ref_Number),
+FOREIGN KEY (Warehouse_ID, Warehouse_Ref_Number) REFERENCES WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number)
+);
+
+CREATE TABLE PERSON_PERSON (
+Person1_ID VARCHAR (20),
+Person1_Ref_Number VARCHAR (30),
+Person2_ID VARCHAR (20),
+Person2_Ref_Number VARCHAR (30),
+PRIMARY KEY (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number),
+FOREIGN KEY (Person1_ID, Person1_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Person2_ID, Person2_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number)
+);
+
+CREATE TABLE PERSON_PRODUCT (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30), 
+Product_Barcode	VARCHAR (20),
+PRIMARY KEY (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode)
+);
+
+CREATE TABLE PERSON_SERVICE (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Service_ID VARCHAR (20), 
+Service_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Service_ID, Service_Ref_Number) REFERENCES SERVICE (Service_ID, Service_Ref_Number)
+);
+
+CREATE TABLE PERSON_CUSTOM_ITEM_REQUEST (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Custom_ID VARCHAR (20), 
+Custom_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Custom_ID, Custom_Ref_Number) REFERENCES CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number)
+);
+
+CREATE TABLE PERSON_RETURN (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Return_ID VARCHAR (20), 
+Return_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Return_ID, Return_Ref_Number) REFERENCES RETURN (Return_ID, Return_Ref_Number)
+);
+
+CREATE TABLE PERSON_PAYMENT (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Payment_ID VARCHAR (20), 
+Payment_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number)
+);
+
+CREATE TABLE PERSON_BRANCH(
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Branch_ID VARCHAR (20), 
+Branch_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number)
+);
+
+CREATE TABLE PERSON_ORDERS (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Order_ID VARCHAR (20), 
+Order_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Order_ID, Order_Ref_Number) REFERENCES ORDERS (Order_ID, Order_Ref_Number)
+);
+
+CREATE TABLE PERSON_FEEDBACK (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Feedback_ID VARCHAR (20), 
+Feedback_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Feedback_ID, Feedback_Ref_Number) REFERENCES FEEDBACK (Feedback_ID, Feedback_Ref_Number)
+);
+
+CREATE TABLE PERSON_PROMOTION (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Promotion_ID VARCHAR (20), 
+Promotion_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION  (Promotion_ID, Promotion_Ref_Number)
+);
+
+CREATE TABLE PERSON_DELIVERY (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Delivery_ID VARCHAR (20), 
+Delivery_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Delivery_ID, Delivery_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Delivery_ID, Delivery_Ref_Number) REFERENCES DELIVERY (Delivery_ID, Delivery_Ref_Number)
+);
+
+CREATE TABLE PERSON_VIP_CARD (
+Person_ID VARCHAR (20),
+Person_Ref_Number VARCHAR (30),
+Card_ID VARCHAR (20), 
+Card_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Person_ID, Person_Ref_Number, Card_ID, Card_Ref_Number),
+FOREIGN KEY (Person_ID, Person_Ref_Number) REFERENCES PERSON (Person_ID, Person_Ref_Number),
+FOREIGN KEY (Card_ID, Card_Ref_Number) REFERENCES VIP_CARD (Card_ID, Card_Ref_Number)
+);
+
+CREATE TABLE STAFF_DISPLAY_SECTION (
+Staff_ID VARCHAR (20),
+Staff_Ref_Number VARCHAR (30),
+Display_ID VARCHAR (20), 
+Display_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Staff_ID, Staff_Ref_Number, Display_ID, Display_Ref_Number),
+FOREIGN KEY (Staff_ID, Staff_Ref_Number) REFERENCES STAFF (Staff_ID, Staff_Ref_Number),
+FOREIGN KEY (Display_ID, Display_Ref_Number) REFERENCES DISPLAY_SECTION (Display_ID, Display_Ref_Number)
+);
+
+CREATE TABLE STAFF_SUPPLIER (
+Staff_ID VARCHAR (20),
+Staff_Ref_Number VARCHAR (30),
+Supplier_ID VARCHAR (20), 
+Supplier_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Staff_ID, Staff_Ref_Number, Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Staff_ID, Staff_Ref_Number) REFERENCES STAFF (Staff_ID, Staff_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number)
+);
+
+CREATE TABLE STAFF_SHIFT (
+Staff_ID VARCHAR (20),
+Staff_Ref_Number VARCHAR (30),
+Shift_ID VARCHAR (20), 
+Shift_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Staff_ID, Staff_Ref_Number, Shift_ID, Shift_Ref_Number),
+FOREIGN KEY (Staff_ID, Staff_Ref_Number) REFERENCES STAFF (Staff_ID, Staff_Ref_Number),
+FOREIGN KEY (Shift_ID, Shift_Ref_Number) REFERENCES SHIFT (Shift_ID, Shift_Ref_Number)
+);
+
+CREATE TABLE SUPPLIER_WAREHOUSE (
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Warehouse_ID VARCHAR (20), 
+Warehouse_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Supplier_ID, Supplier_Ref_Number, Warehouse_ID, Warehouse_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Warehouse_ID, Warehouse_Ref_Number) REFERENCES WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number)
+);
+
+CREATE TABLE SUPPLIER_PRODUCT (
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+PRIMARY KEY (Supplier_ID, Supplier_Ref_Number, Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode)
+);
+
+CREATE TABLE SUPPLIER_VIP_CARD (
+Supplier_ID VARCHAR (20),
+Supplier_Ref_Number VARCHAR (30),
+Card_ID VARCHAR (20), 
+Card_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Supplier_ID, Supplier_Ref_Number, Card_ID, Card_Ref_Number),
+FOREIGN KEY (Supplier_ID, Supplier_Ref_Number) REFERENCES SUPPLIER (Supplier_ID, Supplier_Ref_Number),
+FOREIGN KEY (Card_ID, Card_Ref_Number) REFERENCES VIP_CARD (Card_ID, Card_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_PAYMENT (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Payment_ID VARCHAR (20),
+Payment_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Payment_ID, Payment_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Payment_ID, Payment_Ref_Number) REFERENCES PAYMENT (Payment_ID, Payment_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_INVENTORY (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Inventory_ID VARCHAR (20),
+Inventory_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Inventory_ID, Inventory_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Inventory_ID, Inventory_Ref_Number) REFERENCES INVENTORY (Inventory_ID, Inventory_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_DISPLAY_SECTION (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Display_ID VARCHAR (20),
+Display_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Display_ID, Display_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Display_ID, Display_Ref_Number) REFERENCES DISPLAY_SECTION (Display_ID, Display_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_RETURN (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Return_ID VARCHAR (20),
+Return_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Return_ID, Return_Ref_Number) REFERENCES RETURN (Return_ID, Return_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_PROMOTION (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Promotion_ID VARCHAR (20),
+Promotion_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION  (Promotion_ID, Promotion_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_ORDERS (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Order_ID VARCHAR (20),
+Order_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Order_ID, Order_Ref_Number) REFERENCES ORDERS (Order_ID, Order_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_FEEDBACK (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Feedback_ID VARCHAR (20),
+Feedback_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Feedback_ID, Feedback_Ref_Number) REFERENCES FEEDBACK (Feedback_ID, Feedback_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_SERVICE (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Service_ID VARCHAR (20),
+Service_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Service_ID, Service_Ref_Number) REFERENCES SERVICE (Service_ID, Service_Ref_Number)
+);
+
+CREATE TABLE PRODUCT_CUSTOM_ITEM_REQUEST (
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+Custom_ID VARCHAR (20),
+Custom_Ref_Number VARCHAR (30),
+PRIMARY KEY (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Custom_ID, Custom_Ref_Number) REFERENCES CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number)
+);
+
+CREATE TABLE VIP_CARD_PROMOTION (
+Card_ID VARCHAR (20), 
+Card_Ref_Number VARCHAR (30), 
+Promotion_ID VARCHAR (20),
+Promotion_Ref_Number VARCHAR (30),
+PRIMARY KEY (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Card_ID, Card_Ref_Number) REFERENCES VIP_CARD (Card_ID, Card_Ref_Number),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION (Promotion_ID, Promotion_Ref_Number)
+);
+
+CREATE TABLE BRANCH_PRODUCT (
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30),
+Product_ID VARCHAR (20), 
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20), 
+PRIMARY KEY (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode)
+);
+
+CREATE TABLE BRANCH_CUSTOM_ITEM_REQUEST (
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30),
+Custom_ID VARCHAR (20),
+Custom_Ref_Number VARCHAR (30),
+PRIMARY KEY (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Custom_ID, Custom_Ref_Number) REFERENCES CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number)
+);
+
+CREATE TABLE BRANCH_PROMOTION (
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30),
+Promotion_ID VARCHAR (20),
+Promotion_Ref_Number VARCHAR (30),
+PRIMARY KEY (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION (Promotion_ID, Promotion_Ref_Number)
+);
+
+CREATE TABLE BRANCH_SERVICE (
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30),
+Service_ID VARCHAR (20),
+Service_Ref_Number VARCHAR (30),
+PRIMARY KEY (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Service_ID, Service_Ref_Number) REFERENCES SERVICE (Service_ID, Service_Ref_Number)
+);
+
+CREATE TABLE BRANCH_FEEDBACK (
+Branch_ID VARCHAR (20),
+Branch_Ref_Number VARCHAR (30),
+Feedback_ID VARCHAR (20),
+Feedback_Ref_Number VARCHAR (30),
+PRIMARY KEY (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Feedback_ID, Feedback_Ref_Number) REFERENCES FEEDBACK (Feedback_ID, Feedback_Ref_Number)
+);
+
+CREATE TABLE SERVICE_FEEDBACK (
+Service_ID VARCHAR (20),
+Service_Ref_Number VARCHAR (30),
+Feedback_ID VARCHAR (20),
+Feedback_Ref_Number VARCHAR (30),
+PRIMARY KEY (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Service_ID, Service_Ref_Number) REFERENCES SERVICE (Service_ID, Service_Ref_Number),
+FOREIGN KEY (Feedback_ID, Feedback_Ref_Number) REFERENCES FEEDBACK (Feedback_ID, Feedback_Ref_Number)
+);
+
+CREATE TABLE SERVICE_ORDERS (
+Service_ID VARCHAR (20),
+Service_Ref_Number VARCHAR (30),
+Order_ID VARCHAR (20),
+Order_Ref_Number VARCHAR (30),
+PRIMARY KEY (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number),
+FOREIGN KEY (Service_ID, Service_Ref_Number) REFERENCES SERVICE (Service_ID, Service_Ref_Number),
+FOREIGN KEY (Order_ID, Order_Ref_Number) REFERENCES ORDERS (Order_ID, Order_Ref_Number)
+);
+
+CREATE TABLE PROMOTION_FEEDBACK (
+Promotion_ID VARCHAR (20),
+Promotion_Ref_Number VARCHAR (30),
+Feedback_ID VARCHAR (20),
+Feedback_Ref_Number VARCHAR (30),
+PRIMARY KEY (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION (Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Feedback_ID, Feedback_Ref_Number) REFERENCES FEEDBACK (Feedback_ID, Feedback_Ref_Number)
+);
+
+CREATE TABLE PROMOTION_SERVICE (
+Promotion_ID VARCHAR (20),
+Promotion_Ref_Number VARCHAR (30),
+Service_ID VARCHAR (20),
+Service_Ref_Number VARCHAR (30),
+PRIMARY KEY (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION (Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Service_ID, Service_Ref_Number) REFERENCES SERVICE (Service_ID, Service_Ref_Number)
+);
+
+CREATE TABLE PROMOTION_CUSTOM_ITEM_REQUEST (
+Promotion_ID VARCHAR (20),
+Promotion_Ref_Number VARCHAR (30),
+Custom_ID VARCHAR (20),
+Custom_Ref_Number VARCHAR (30),
+PRIMARY KEY (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Promotion_ID, Promotion_Ref_Number) REFERENCES PROMOTION (Promotion_ID, Promotion_Ref_Number),
+FOREIGN KEY (Custom_ID, Custom_Ref_Number) REFERENCES CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number)
+);
+
+CREATE TABLE WAREHOUSE_BRANCH (
+Warehouse_ID VARCHAR (20),
+Warehouse_Ref_Number VARCHAR (30),
+Branch_ID VARCHAR (20), 
+Branch_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number),
+FOREIGN KEY (Warehouse_ID, Warehouse_Ref_Number) REFERENCES WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number),
+FOREIGN KEY (Branch_ID, Branch_Ref_Number) REFERENCES BRANCH (Branch_ID, Branch_Ref_Number)
+);
+
+CREATE TABLE WAREHOUSE_DELIVERY (
+Warehouse_ID VARCHAR (20),
+Warehouse_Ref_Number VARCHAR (30),
+Delivery_ID VARCHAR (20), 
+Delivery_Ref_Number VARCHAR (30), 
+PRIMARY KEY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number),
+FOREIGN KEY (Warehouse_ID, Warehouse_Ref_Number) REFERENCES WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number),
+FOREIGN KEY (Delivery_ID, Delivery_Ref_Number) REFERENCES DELIVERY (Delivery_ID, Delivery_Ref_Number)
+);
+
+CREATE TABLE DELIVERY_PRODUCT (
+Delivery_ID VARCHAR (20), 
+Delivery_Ref_Number VARCHAR (30), 
+Product_ID VARCHAR (20),
+Product_SKU VARCHAR (30),
+Product_Barcode VARCHAR (20),
+PRIMARY KEY (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode),
+FOREIGN KEY (Delivery_ID, Delivery_Ref_Number) REFERENCES DELIVERY (Delivery_ID, Delivery_Ref_Number),
+FOREIGN KEY (Product_ID, Product_SKU, Product_Barcode) REFERENCES PRODUCT (Product_ID, Product_SKU, Product_Barcode)
+);
+
+CREATE TABLE CUSTOM_ITEM_REQUEST_ORDERS (
+Custom_ID VARCHAR (20),
+Custom_Ref_Number VARCHAR (30),
+Order_ID VARCHAR (20),
+Order_Ref_Number VARCHAR (30),
+PRIMARY KEY (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number),
+FOREIGN KEY (Custom_ID, Custom_Ref_Number) REFERENCES CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Order_ID, Order_Ref_Number) REFERENCES ORDERS (Order_ID, Order_Ref_Number)
+);
+
+CREATE TABLE CUSTOM_ITEM_REQUEST_FEEDBACK (
+Custom_ID VARCHAR (20),
+Custom_Ref_Number VARCHAR (30),
+Feedback_ID VARCHAR (20),
+Feedback_Ref_Number VARCHAR (30),
+PRIMARY KEY (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number),
+FOREIGN KEY (Custom_ID, Custom_Ref_Number) REFERENCES CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number),
+FOREIGN KEY (Feedback_ID, Feedback_Ref_Number) REFERENCES FEEDBACK (Feedback_ID, Feedback_Ref_Number)
+);
