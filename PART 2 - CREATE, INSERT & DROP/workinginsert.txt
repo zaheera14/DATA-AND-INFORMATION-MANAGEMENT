@@ -1,0 +1,826 @@
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0001', 'PERSON-0001', 'Fatimah', 'Ahmad', '966634-83-6995', '014-2787221', 'fatimah@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0002', 'PERSON-0002', 'Tom', 'Ahmad', '904901-19-4549', '013-7620715', 'tom@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0003', 'PERSON-0003', 'Sara', 'Yusof', '967174-94-6540', '016-2422918', 'sara@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0004', 'PERSON-0004', 'Wei', 'Yusof', '943981-31-8905', '019-5042998', 'wei@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0005', 'PERSON-0005', 'Wei', 'Yusof', '946526-97-7202', '017-8813854', 'wei@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0006', 'PERSON-0006', 'Zara', 'Abdullah', '943174-71-9048', '017-7264996', 'zara@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0007', 'PERSON-0007', 'Muthu', 'Lee', '964061-14-2333', '017-5166411', 'muthu@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0008', 'PERSON-0008', 'John', 'Mokhtar', '922205-87-2734', '019-5406006', 'john@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0009', 'PERSON-0009', 'Linda', 'Chong', '908443-80-1897', '019-5771778', 'linda@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0010', 'PERSON-0010', 'Sara', 'Tan', '983652-98-9661', '018-2691793', 'sara@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0011', 'PERSON-0011', 'Amir', 'Rahman', '975421-11-4432', '013-7829133', 'amir@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0012', 'PERSON-0012', 'Aisha', 'Malik', '981243-10-2145', '014-2294877', 'aisha@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0013', 'PERSON-0013', 'Hafiz', 'Zainal', '965478-05-3849', '016-7283849', 'hafiz@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0014', 'PERSON-0014', 'Emily', 'Tan', '984537-09-4850', '018-9123485', 'emily@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0015', 'PERSON-0015', 'Daniel', 'Wong', '958324-02-1346', '013-4442221', 'daniel@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0016', 'PERSON-0016', 'Kavitha', 'Subramaniam', '972225-12-8894', '017-3495221', 'kavitha@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0017', 'PERSON-0017', 'Roslan', 'Ismail', '947381-33-2457', '019-2847394', 'roslan@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0018', 'PERSON-0018', 'Nurul', 'Huda', '986543-66-8421', '018-6611992', 'nurul@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0019', 'PERSON-0019', 'Jason', 'Goh', '962398-23-1122', '014-5782394', 'jason@gmail.com');
+INSERT INTO PERSON (Person_ID, Person_Ref_Number, First_Name, Last_Name, IC_No, Contact_Number, Email) VALUES ('PER0020', 'PERSON-0020', 'Mei Ling', 'Chan', '953224-05-5567', '016-2893471', 'meiling@gmail.com');
+
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0001', 'CUSTOMER-0001', 'Mrs.', '939 Jalan Example, City', 'SMS', 'YES', 'Seri Iskandar Branch', TO_DATE('2022-10-14', 'YYYY-MM-DD'), TO_DATE('2023-11-23', 'YYYY-MM-DD'), 'Regular', 'PER0001', 'PERSON-0001');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0002', 'CUSTOMER-0002', 'Mr.', '706 Jalan Example, City', 'Phone', 'NO', 'Ipoh Branch', TO_DATE('2022-12-02', 'YYYY-MM-DD'), TO_DATE('2024-12-11', 'YYYY-MM-DD'), 'Non-Regular', 'PER0002', 'PERSON-0002');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0003', 'CUSTOMER-0003', 'Ms.', '609 Jalan Example, City', 'Phone', 'YES', 'Batu Gajah Branch', TO_DATE('2021-06-25', 'YYYY-MM-DD'), TO_DATE('2024-06-19', 'YYYY-MM-DD'), 'Regular', 'PER0003', 'PERSON-0003');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0004', 'CUSTOMER-0004', 'Ms.', '882 Jalan Example, City', 'Email', 'YES', 'Kampar Branch', TO_DATE('2020-07-06', 'YYYY-MM-DD'), TO_DATE('2024-11-23', 'YYYY-MM-DD'), 'Regular', 'PER0004', 'PERSON-0004');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0005', 'CUSTOMER-0005', 'Ms.', '77 Jalan Example, City', 'Email', 'NO', 'Taiping Branch', TO_DATE('2020-02-19', 'YYYY-MM-DD'), TO_DATE('2023-01-29', 'YYYY-MM-DD'), 'Non-Regular', 'PER0005', 'PERSON-0005');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0006', 'CUSTOMER-0006', 'Ms.', '80 Jalan Example, City', 'Email', 'YES', 'Menglembu Branch', TO_DATE('2020-05-01', 'YYYY-MM-DD'), TO_DATE('2024-10-07', 'YYYY-MM-DD'), 'Regular', 'PER0006', 'PERSON-0006');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0007', 'CUSTOMER-0007', 'Dr.', '767 Jalan Example, City', 'Email', 'NO', 'Chemor Branch', TO_DATE('2022-05-12', 'YYYY-MM-DD'), TO_DATE('2023-08-25', 'YYYY-MM-DD'), 'Non-Regular', 'PER0007', 'PERSON-0007');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0008', 'CUSTOMER-0008', 'Mr.', '299 Jalan Example, City', 'SMS', 'NO', 'Gopeng Branch', TO_DATE('2022-03-26', 'YYYY-MM-DD'), TO_DATE('2023-07-27', 'YYYY-MM-DD'), 'Non-Regular', 'PER0008', 'PERSON-0008');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0009', 'CUSTOMER-0009', 'Dr.', '696 Jalan Example, City', 'SMS', 'YES', 'Teluk Intan Branch', TO_DATE('2022-04-19', 'YYYY-MM-DD'), TO_DATE('2024-06-09', 'YYYY-MM-DD'), 'Regular', 'PER0009', 'PERSON-0009');
+INSERT INTO CUSTOMER (Customer_ID, Customer_Ref_Number, Customer_Title, Customer_Address, Contact_Preference, Is_VIP, Preferred_Branch, First_Visited_Date, Last_Purchased_Date, Customer_Description, Person_ID, Person_Ref_Number) VALUES ('CUS0010', 'CUSTOMER-0010', 'Mr.', '7 Jalan Example, City', 'SMS', 'YES', 'Sitiawan Branch', TO_DATE('2021-10-19', 'YYYY-MM-DD'), TO_DATE('2023-03-29', 'YYYY-MM-DD'), 'Regular', 'PER0010', 'PERSON-0010');
+
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0001', 'SHIFT-0001', '08:00', '17:00', 'Wednesday', 'Evening', 'YES', 'Absent', 8.5, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0002', 'SHIFT-0002', '08:00', '17:00', 'Friday', 'Morning', 'YES', 'Absent', 8.6, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0003', 'SHIFT-0003', '08:00', '17:00', 'Tuesday', 'Morning', 'YES', 'Late', 7.4, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0004', 'SHIFT-0004', '08:00', '17:00', 'Monday', 'Evening', 'YES', 'On Time', 7.8, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0005', 'SHIFT-0005', '08:00', '17:00', 'Wednesday', 'Evening', 'NO', 'On Time', 8, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0006', 'SHIFT-0006', '08:00', '17:00', 'Wednesday', 'Evening', 'NO', 'On Time', 7, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0007', 'SHIFT-0007', '08:00', '17:00', 'Monday', 'Morning', 'NO', 'Absent', 8.3, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0008', 'SHIFT-0008', '08:00', '17:00', 'Tuesday', 'Evening', 'NO', 'Absent', 8.6, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0009', 'SHIFT-0009', '08:00', '17:00', 'Monday', 'Morning', 'YES', 'On Time', 8.2, '12:00-13:00');
+INSERT INTO SHIFT (Shift_ID, Shift_Ref_Number, Shift_Start, Shift_End, Day_Of_Week, Shift_Type, Is_Overtime, Clock_In_Status, Logged_Hours, Break_Schedule) VALUES ('SHI0010', 'SHIFT-0010', '08:00', '17:00', 'Tuesday', 'Evening', 'NO', 'Late', 8.3, '12:00-13:00');
+
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0001', 'SUPPLIER-0001', 'Company A Ltd.', 'Rep 1', 'rep1@companyA.com', 'Apparel', TO_DATE('2022-04-11', 'YYYY-MM-DD'), TO_DATE('2023-09-28', 'YYYY-MM-DD'), 'Terminated', 4.3);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0002', 'SUPPLIER-0002', 'Company B Ltd.', 'Rep 2', 'rep2@companyB.com', 'Apparel', TO_DATE('2021-06-09', 'YYYY-MM-DD'), TO_DATE('2023-08-07', 'YYYY-MM-DD'), 'Terminated', 4.6);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0003', 'SUPPLIER-0003', 'Company C Ltd.', 'Rep 3', 'rep3@companyC.com', 'Stationery', TO_DATE('2022-01-24', 'YYYY-MM-DD'), TO_DATE('2024-06-19', 'YYYY-MM-DD'), 'Expired', 4.9);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0004', 'SUPPLIER-0004', 'Company D Ltd.', 'Rep 4', 'rep4@companyD.com', 'Stationery', TO_DATE('2021-07-19', 'YYYY-MM-DD'), TO_DATE('2024-04-07', 'YYYY-MM-DD'), 'Active', 4.4);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0005', 'SUPPLIER-0005', 'Company E Ltd.', 'Rep 5', 'rep5@companyE.com', 'Apparel', TO_DATE('2021-02-02', 'YYYY-MM-DD'), TO_DATE('2024-10-19', 'YYYY-MM-DD'), 'Terminated', 3.1);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0006', 'SUPPLIER-0006', 'Company F Ltd.', 'Rep 6', 'rep6@companyF.com', 'Apparel', TO_DATE('2021-10-02', 'YYYY-MM-DD'), TO_DATE('2024-10-19', 'YYYY-MM-DD'), 'Active', 3.7);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0007', 'SUPPLIER-0007', 'Company G Ltd.', 'Rep 7', 'rep7@companyG.com', 'Stationery', TO_DATE('2021-04-07', 'YYYY-MM-DD'), TO_DATE('2024-05-16', 'YYYY-MM-DD'), 'Active', 4.1);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0008', 'SUPPLIER-0008', 'Company H Ltd.', 'Rep 8', 'rep8@companyH.com', 'Stationery', TO_DATE('2022-11-30', 'YYYY-MM-DD'), TO_DATE('2025-06-17', 'YYYY-MM-DD'), 'Active', 4.8);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0009', 'SUPPLIER-0009', 'Company I Ltd.', 'Rep 9', 'rep9@companyI.com', 'Apparel', TO_DATE('2021-02-26', 'YYYY-MM-DD'), TO_DATE('2023-10-06', 'YYYY-MM-DD'), 'Expired', 3.9);
+INSERT INTO SUPPLIER (Supplier_ID, Supplier_Ref_Number, Company_Name, Representative_Name, Supplier_Email, Supplied_Product, Contract_Start_Date, Contract_End_Date, Contract_Status, Supplier_Rating) VALUES ('SUP0010', 'SUPPLIER-0010', 'Company J Ltd.', 'Rep 10', 'rep10@companyJ.com', 'Electronics', TO_DATE('2022-12-21', 'YYYY-MM-DD'), TO_DATE('2025-01-03', 'YYYY-MM-DD'), 'Active', 4.2);
+
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0001', 'MAINTENANCE-0001', 'Repair', TO_DATE('2025-01-04','YYYY-MM-DD'), TO_DATE('2025-01-06','YYYY-MM-DD'), 'TechZone Sdn Bhd', '0125558881', 500, 'Resolved', 'Aircon faulty');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0002', 'MAINTENANCE-0002', 'Inspection', TO_DATE('2025-01-06','YYYY-MM-DD'), TO_DATE('2025-01-10','YYYY-MM-DD'), 'SafeTech Sdn Bhd', '0135558882', 100, 'Resolved', 'Fire alarm testing');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0003', 'MAINTENANCE-0003', 'Repair', TO_DATE('2025-01-10','YYYY-MM-DD'), NULL, 'RepairBuddy Sdn Bhd', '0145558883', 350, 'Pending', 'Water leak');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0004', 'MAINTENANCE-0004', 'Inspection', TO_DATE('2025-01-12','YYYY-MM-DD'), TO_DATE('2025-01-15','YYYY-MM-DD'), 'InspectionPro Sdn Bhd', '0155558884', 150, 'Resolved', 'Lift maintenance');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0005', 'MAINTENANCE-0005', 'Repair', TO_DATE('2025-04-04','YYYY-MM-DD'), TO_DATE('2025-04-05','YYYY-MM-DD'), 'RepairBuddy Sdn Bhd', '0165558885', 500, 'Resolved', 'Aircon compressor');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0006', 'MAINTENANCE-0006', 'Inspection', TO_DATE('2025-04-07','YYYY-MM-DD'), NULL, 'SafeTech Sdn Bhd', '0175558886', 100, 'Pending', 'Smoke alarm');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0007', 'MAINTENANCE-0007', 'Repair', TO_DATE('2025-04-09','YYYY-MM-DD'), TO_DATE('2025-04-12','YYYY-MM-DD'), 'TechZone Sdn Bhd', '0195558887', 250, 'Resolved', 'Lift faulty');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0008', 'MAINTENANCE-0008', 'Inspection', TO_DATE('2025-04-15','YYYY-MM-DD'), NULL, 'InspectionPro Sdn Bhd', '0105558888', 100, 'Pending', 'Security camera');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0009', 'MAINTENANCE-0009', 'Repair', TO_DATE('2025-04-18','YYYY-MM-DD'), TO_DATE('2025-04-20','YYYY-MM-DD'), 'RepairBuddy Sdn Bhd', '0115558889', 400, 'Resolved', 'Water pipe');
+INSERT INTO MAINTENANCE_LOG VALUES ('MAI0010', 'MAINTENANCE-0010', 'Inspection', TO_DATE('2025-04-20','YYYY-MM-DD'), NULL, 'SafeTech Sdn Bhd', '0125558880', 100, 'Pending', 'Lift annual maintenance');
+
+INSERT INTO PRODUCT VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'A4 Paper', 'Paper Product', 'Double A', 12, 100, 'No', 0);
+INSERT INTO PRODUCT VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'Sketch Book', 'Paper Product', 'Faber Castell', 18, 50, 'Yes', 0);
+INSERT INTO PRODUCT VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'Stapler', 'Stationery', 'Kangaro', 25, 30, 'Yes', 0);
+INSERT INTO PRODUCT VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'Paper Punch', 'Stationery', 'Kangaro', 35, 20, 'Yes', 0);
+INSERT INTO PRODUCT VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'Glue Stick', 'Stationery', 'UHU', 10, 100, 'No', 0);
+INSERT INTO PRODUCT VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'File Holder', 'Storage', 'Faber Castell', 20, 75, 'Yes', 0);
+INSERT INTO PRODUCT VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'Whiteboard Marker', 'Stationery', 'Artline', 5, 150, 'No', 0);
+INSERT INTO PRODUCT VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'Correction Tape', 'Stationery', 'Tombow', 7, 200, 'No', 0);
+INSERT INTO PRODUCT VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'Eraser', 'Stationery', 'Faber Castell', 3, 300, 'No', 0);
+INSERT INTO PRODUCT VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'Ruler', 'Stationery', 'Faber Castell', 2, 500, 'No', 0);
+
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0001', 'PROMOTION-0001', 'Back to School Sale', 'Seasonal', TO_DATE('2025-01-01', 'YYYY-MM-DD'), TO_DATE('2025-01-10', 'YYYY-MM-DD'), 0.20, 'Notebooks', 1000, '20% off on all notebooks');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0002', 'PROMOTION-0002', 'Member Exclusive', 'VIP', TO_DATE('2025-03-01', 'YYYY-MM-DD'), TO_DATE('2025-03-31', 'YYYY-MM-DD'), 0.10, 'Pens and Markers', 300, '10% discount on all pens and markers');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0003', 'PROMOTION-0003', 'Member Exclusive', 'VIP', TO_DATE('2025-05-01', 'YYYY-MM-DD'), TO_DATE('2025-06-01', 'YYYY-MM-DD'), 0.15, 'All Categories', 200, 'VIPs get 15% on accessories');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0004', 'PROMOTION-0004', 'Mid-Year Clearance', 'Clearance', TO_DATE('2025-04-01', 'YYYY-MM-DD'), TO_DATE('2025-04-30', 'YYYY-MM-DD'), 0.25, 'Art Supplies', 400, '25% off for all art supplies');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0005', 'PROMOTION-0005', 'Clearance Sale', 'Clearance', TO_DATE('2025-05-01', 'YYYY-MM-DD'), TO_DATE('2025-05-15', 'YYYY-MM-DD'), 0.30, 'Mixed Items', 150, 'Big discounts on old stocks');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0006', 'PROMOTION-0006', 'Member Exclusive', 'VIP', TO_DATE('2025-06-01', 'YYYY-MM-DD'), TO_DATE('2025-06-30', 'YYYY-MM-DD'), 0.12, 'Stationery Sets', 100, 'Discount on stationery packages');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0007', 'PROMOTION-0007', 'Teacher’s Week', 'Seasonal', TO_DATE('2025-08-15', 'YYYY-MM-DD'), TO_DATE('2025-08-31', 'YYYY-MM-DD'), 0.18, 'All Products', 500, 'Celebrate with 18% savings');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0008', 'PROMOTION-0008', 'Back to School Sale', 'Category', TO_DATE('2025-09-01', 'YYYY-MM-DD'), TO_DATE('2025-09-15', 'YYYY-MM-DD'), 0.10, 'Exam Essentials', 150, 'Discounted bundles for exam preparations');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0009', 'PROMOTION-0009', 'Flash Sale', 'Flash', TO_DATE('2025-07-05', 'YYYY-MM-DD'), TO_DATE('2025-07-05', 'YYYY-MM-DD'), 0.50, 'Erasers and Sharpeners', 50, 'One-day flash sale on small items');
+INSERT INTO PROMOTION (Promotion_ID, Promotion_Ref_Number, Promo_Name, Promo_Type, Promo_Start_Date, Promo_End_Date, Promo_Rate, Target_Category, Stock_Allocated, Promo_Description) VALUES ('PRM0010', 'PROMOTION-0010', 'New Arrivals Promo', 'New Product', TO_DATE('2025-06-20', 'YYYY-MM-DD'), TO_DATE('2025-07-10', 'YYYY-MM-DD'), 0.08, 'Office Supplies', 120, 'Discount on new arrivals');
+
+INSERT INTO BRANCH VALUES ('BRA0001', 'BRANCH-0001', 'Pustaka Chiew Seri Iskandar', '0132588881', 5, 10000, 7500, 50, 'Printing, Binding, Lamination', 'Active', '5, Jln Melor, Seri Iskandar', 'MAI0001', 'MAINTENANCE-0001');
+INSERT INTO BRANCH VALUES ('BRA0002', 'BRANCH-0002', 'Pustaka Chiew Ipoh', '0142588882', 10, 25000, 22000, 100, 'Printing, Binding', 'Active', '18, Jln Kenanga, Ipoh', 'MAI0002', 'MAINTENANCE-0002');
+INSERT INTO BRANCH VALUES ('BRA0003', 'BRANCH-0003', 'Pustaka Chiew Batu Gajah', '0152588883', 7, 20000, 15000, 80, 'Printing, Binding, Lamination', 'Active', '26, Tmn Cempaka, Batu Gajah', 'MAI0003', 'MAINTENANCE-0003');
+INSERT INTO BRANCH VALUES ('BRA0004', 'BRANCH-0004', 'Pustaka Chiew Kampar', '0162588884', 5, 10000, 7800, 60, 'Printing', 'Active', '32, Jln Mawar, Kampar', 'MAI0004', 'MAINTENANCE-0004');
+INSERT INTO BRANCH VALUES ('BRA0005', 'BRANCH-0005', 'Pustaka Chiew Taiping', '0172588885', 12, 30000, 28000, 120, 'Printing, Binding, Lamination', 'Active', '54, Jln Merbau, Taiping', 'MAI0005', 'MAINTENANCE-0005');
+INSERT INTO BRANCH VALUES ('BRA0006', 'BRANCH-0006', 'Pustaka Chiew Menglembu', '0182588886', 6, 15000, 13500, 90, 'Printing, Binding', 'Active', '79, Jln Dahlia, Menglembu', 'MAI0006', 'MAINTENANCE-0006');
+INSERT INTO BRANCH VALUES ('BRA0007', 'BRANCH-0007', 'Pustaka Chiew Chemor', '0192588887', 5, 10000, 9200, 55, 'Printing', 'Suspended', '133, Jln Tasek, Chemor', 'MAI0007', 'MAINTENANCE-0007');
+INSERT INTO BRANCH VALUES ('BRA0008', 'BRANCH-0008', 'Pustaka Chiew Gopeng', '0102588888', 8, 22000, 20000, 95, 'Printing, Binding', 'Active', '220, Jln Cenderawasih, Gopeng', 'MAI0008', 'MAINTENANCE-0008');
+INSERT INTO BRANCH VALUES ('BRA0009', 'BRANCH-0009', 'Pustaka Chiew Teluk Intan', '0112588889', 10, 28000, 25000, 105, 'Printing, Binding, Lamination', 'Active', '305, Jln Merdeka, Teluk Intan', 'MAI0009', 'MAINTENANCE-0009');
+INSERT INTO BRANCH VALUES ('BRA0010', 'BRANCH-0010', 'Pustaka Chiew Sitiawan', '0122588880', 6, 16000, 14000, 85, 'Printing', 'Suspended', '2416, Jln Nanas, Sitiawan', 'MAI0010', 'MAINTENANCE-0010');
+
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0001', 'DISPLAY-0001', 'Pen Paradise', 'G1', 5, 300, 'Pens', 'Weekly', TO_DATE('2025-06-10', 'YYYY-MM-DD'), 'Yes', 'BRA0001', 'BRANCH-0001');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0002', 'DISPLAY-0002', 'Notebook Nook', 'G1', 6, 350, 'Notebooks', 'Weekly', TO_DATE('2025-06-12', 'YYYY-MM-DD'), 'No', 'BRA0002', 'BRANCH-0002');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0003', 'DISPLAY-0003', 'Art Alley', 'G2', 4, 200, 'Art Supplies', 'Weekly', TO_DATE('2025-06-08', 'YYYY-MM-DD'), 'Yes', 'BRA0003', 'BRANCH-0003');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0004', 'DISPLAY-0004', 'File and Folder Hub', 'G2', 5, 250, 'Files and Folders', 'Weekly', TO_DATE('2025-06-01', 'YYYY-MM-DD'), 'No', 'BRA0004', 'BRANCH-0004');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0005', 'DISPLAY-0005', 'Exam Central', 'G1', 3, 150, 'Exam Essentials', 'Monthly', TO_DATE('2025-06-11', 'YYYY-MM-DD'), 'Yes', 'BRA0005', 'BRANCH-0005');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0006', 'DISPLAY-0006', 'Sticky Notes Stop', 'G1', 2, 100, 'Sticky Notes', 'Weekly', TO_DATE('2025-06-09', 'YYYY-MM-DD'), 'No', 'BRA0006', 'BRANCH-0006');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0007', 'DISPLAY-0007', 'Creative Corner', 'G2', 5, 300, 'Coloring Tools', 'Weekly', TO_DATE('2025-06-05', 'YYYY-MM-DD'), 'Yes', 'BRA0007', 'BRANCH-0007');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0008', 'DISPLAY-0008', 'Office Basics', 'G2', 4, 200, 'Office Supplies', 'Monthly', TO_DATE('2025-06-06', 'YYYY-MM-DD'), 'No', 'BRA0008', 'BRANCH-0008');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0009', 'DISPLAY-0009', 'Staple Station', 'G1', 3, 150, 'Staplers', 'Weekly', TO_DATE('2025-06-07', 'YYYY-MM-DD'), 'Yes', 'BRA0009', 'BRANCH-0009');
+INSERT INTO DISPLAY_SECTION (Display_ID, Display_Ref_Number, Section_Name, Floor_Location, Shelf_Count, Max_Capacity, Assigned_Category, Refill_Interval, Last_Updated_Date, Refill_Needed, Branch_ID, Branch_Ref_Number) VALUES ('DIS0010', 'DISPLAY-0010', 'Eraser Lane', 'G1', 3, 180, 'Erasers', 'Weekly', TO_DATE('2025-06-14', 'YYYY-MM-DD'), 'No', 'BRA0010', 'BRANCH-0010');
+
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0001', 'WAREHOUSE-0001', 'Warehouse A', '012-3456789', '4000', '20000.50', '1000', '2000', 'Completed', 'Yes', 'MAI0001', 'MAINTENANCE-0001');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0002', 'WAREHOUSE-0002', 'Warehouse B', '011-2223344', '3200', '18500.75', '800', '3000', 'Completed', 'No', 'MAI0002', 'MAINTENANCE-0002');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0003', 'WAREHOUSE-0003', 'Warehouse C', '013-5566778', '5000', '30000.00', '1500', '7000', 'Verified', 'Yes', 'MAI0003', 'MAINTENANCE-0003');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0004', 'WAREHOUSE-0004', 'Warehouse D', '014-6677889', '2700', '15800.20', '700', '1000', 'Investigating', 'Yes', 'MAI0004', 'MAINTENANCE-0004');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0005', 'WAREHOUSE-0005', 'Warehouse E', '015-9988776', '4500', '41000.10', '2000', '2500', 'Verified', 'No', 'MAI0005', 'MAINTENANCE-0005');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0006', 'WAREHOUSE-0006', 'Warehouse F', '016-3344556', '3900', '28700.60', '1200', '1500', 'Completed', 'Yes', 'MAI0006', 'MAINTENANCE-0006');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0007', 'WAREHOUSE-0007', 'Warehouse G', '017-1122334', '3100', '17550.25', '900', '1000', 'Completed', 'No', 'MAI0007', 'MAINTENANCE-0007');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0008', 'WAREHOUSE-0008', 'Warehouse H', '018-5566443', '2800', '14500.30', '700', '1000', 'Completed', 'Yes', 'MAI0008', 'MAINTENANCE-0008');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0009', 'WAREHOUSE-0009', 'Warehouse I', '019-6677554', '4200', '32250.75', '1100', '3500', 'Completed', 'Yes', 'MAI0009', 'MAINTENANCE-0009');
+INSERT INTO WAREHOUSE (Warehouse_ID, Warehouse_Ref_Number, Warehouse_Name, Warehouse_Contact, Filled_Capacity, Inventory_Value, Available_Capacity, Max_Capacity, Warehouse_Status, Warehouse_Address, Maintenance_ID, Maintenance_Ref_Number) VALUES ('WAR0010', 'WAREHOUSE-0010', 'Warehouse J', '010-9988665', '4700', '38800.90', '1300', '2000', 'Completed', 'Yes', 'MAI0010', 'MAINTENANCE-0010');
+
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0001', 'INVENTORY-0001', 'Electronics', TO_DATE('2024-05-01', 'YYYY-MM-DD'), TO_DATE('2024-06-01', 'YYYY-MM-DD'), '48', '20', 'No', 'A1-S3', 'Good', 'BRA0001', 'BRANCH-0001', 'WAR0001', 'WAREHOUSE-0001');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0002', 'INVENTORY-0002', 'Apparel', TO_DATE('2024-05-03', 'YYYY-MM-DD'), NULL, '30', '10', 'No', 'B2-S1', 'Good', 'BRA0002', 'BRANCH-0002', 'WAR0002', 'WAREHOUSE-0002');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0003', 'INVENTORY-0003', 'Food', TO_DATE('2024-05-05', 'YYYY-MM-DD'), TO_DATE('2024-05-30', 'YYYY-MM-DD'), '15', '15', 'No', 'C1-S4', 'Good', 'BRA0003', 'BRANCH-0003', 'WAR0003', 'WAREHOUSE-0003');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0004', 'INVENTORY-0004', 'Stationary', TO_DATE('2024-05-10', 'YYYY-MM-DD'), NULL, '4', '10', 'Yes', 'D3-S2', 'Poor', 'BRA0004', 'BRANCH-0004', 'WAR0004', 'WAREHOUSE-0004');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0005', 'INVENTORY-0005', 'Accessories', TO_DATE('2024-05-12', 'YYYY-MM-DD'), TO_DATE('2024-06-05', 'YYYY-MM-DD'), '11', '10', 'No', 'A1-S1', 'Good', 'BRA0005', 'BRANCH-0005', 'WAR0005', 'WAREHOUSE-0005');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0006', 'INVENTORY-0006', 'Electronics', TO_DATE('2024-05-14', 'YYYY-MM-DD'), NULL, '23', '25', 'Yes', 'A2-S3', 'Good', 'BRA0006', 'BRANCH-0006', 'WAR0006', 'WAREHOUSE-0006');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0007', 'INVENTORY-0007', 'Apparel', TO_DATE('2024-05-18', 'YYYY-MM-DD'), NULL, '12', '8', 'No', 'B1-S2', 'Good', 'BRA0007', 'BRANCH-0007', 'WAR0007', 'WAREHOUSE-0007');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0008', 'INVENTORY-0008', 'Stationary', TO_DATE('2024-05-20', 'YYYY-MM-DD'), TO_DATE('2024-06-02', 'YYYY-MM-DD'), '20', '20', 'No', 'C3-S1', 'Average', 'BRA0008', 'BRANCH-0008', 'WAR0008', 'WAREHOUSE-0008');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0009', 'INVENTORY-0009', 'Food', TO_DATE('2024-05-21', 'YYYY-MM-DD'), NULL, '7', '10', 'Yes', 'D2-S4', 'Poor', 'BRA0009', 'BRANCH-0009', 'WAR0009', 'WAREHOUSE-0009');
+INSERT INTO INVENTORY (Inventory_ID, Inventory_Ref_Number, Inventory_Type, Entry_Date, Exit_Date, Current_Quantity, Minimum_Quantity_Needed, Restock_Needed, Shelf_Location, Condition_Status, Branch_ID, Branch_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('INV0010', 'INVENTORY-0010', 'Accessories', TO_DATE('2024-05-25', 'YYYY-MM-DD'), NULL, '13', '15', 'Yes', 'A3-S3', 'Good', 'BRA0010', 'BRANCH-0010', 'WAR0010', 'WAREHOUSE-0010');
+
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0001', 'ADJUSTMENT-0001', TO_DATE('2024-06-01', 'YYYY-MM-DD'), 'Restocking Error', 'Manual', '100', '150', 'Added missing stock', 'Completed', 'Yes', 'INV0001', 'INVENTORY-0001');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0002', 'ADJUSTMENT-0002', TO_DATE('2024-06-02', 'YYYY-MM-DD'), 'Spoilage', 'Manual', '90', '85', 'Removed damaged items', 'Completed', 'No', 'INV0002', 'INVENTORY-0002');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0003', 'ADJUSTMENT-0003', TO_DATE('2024-06-03', 'YYYY-MM-DD'), 'Inventory Count', 'Automated', '60', '60', 'Verified quantities', 'Verified', 'Yes', 'INV0003', 'INVENTORY-0003');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0004', 'ADJUSTMENT-0004', TO_DATE('2024-06-04', 'YYYY-MM-DD'), 'Theft', 'Manual', '40', '35', 'Reported missing units', 'Investigating', 'Yes', 'INV0004', 'INVENTORY-0004');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0005', 'ADJUSTMENT-0005', TO_DATE('2024-06-05', 'YYYY-MM-DD'), 'Mislabeling', 'Automated', '130', '130', 'No adjustment needed', 'Verified', 'No', 'INV0005', 'INVENTORY-0005');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0006', 'ADJUSTMENT-0006', TO_DATE('2024-06-06', 'YYYY-MM-DD'), 'Restocking', 'Manual', '20', '45', 'Replenished low stock', 'Completed', 'Yes', 'INV0006', 'INVENTORY-0006');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0007', 'ADJUSTMENT-0007', TO_DATE('2024-06-07', 'YYYY-MM-DD'), 'Audit', 'Manual', '75', '73', 'Minor discrepancy noted', 'Completed', 'No', 'INV0007', 'INVENTORY-0007');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0008', 'ADJUSTMENT-0008', TO_DATE('2024-06-08', 'YYYY-MM-DD'), 'Expired Items', 'Automated', '35', '30', 'Removed expired stock', 'Completed', 'Yes', 'INV0008', 'INVENTORY-0008');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0009', 'ADJUSTMENT-0009', TO_DATE('2024-06-09', 'YYYY-MM-DD'), 'Damage Return', 'Manual', '120', '118', 'Returned damaged products', 'Completed', 'Yes', 'INV0009', 'INVENTORY-0009');
+INSERT INTO STOCK_ADJUSTMENT (Adjustment_ID, Adjustment_Ref_Number, Adjustment_Date, Adjustment_Reason, Adjustment_Method, Quantity_Before, Quantity_After, Adjustment_Description, Adjustment_Status, Evidence_Attached, Inventory_ID, Inventory_Ref_Number) VALUES ('ADJ0010', 'ADJUSTMENT-0010', TO_DATE('2024-06-10', 'YYYY-MM-DD'), 'Supplier Recall', 'Manual', '45', '0', 'Full recall by supplier', 'Completed', 'Yes', 'INV0010', 'INVENTORY-0010');
+
+INSERT INTO DELIVERY VALUES ('DEL0001', 'DELIVERY-0001', TO_DATE('2025-01-04','YYYY-MM-DD'), 'Standard', '5, Jln Melor, Seri Iskandar', 'ABC123', 'Toyota HiAce', 20, 'Delivered', 'No', 'BRA0001', 'BRANCH-0001', 'SUP0001', 'SUPPLIER-0001');
+INSERT INTO DELIVERY VALUES ('DEL0002', 'DELIVERY-0002', TO_DATE('2025-01-06','YYYY-MM-DD'), 'Express', '18, Jln Kenanga, Ipoh', 'CDE234', 'Nissan Van', 10, 'Delivered', 'Yes', 'BRA0002', 'BRANCH-0002', 'SUP0002', 'SUPPLIER-0002');
+INSERT INTO DELIVERY VALUES ('DEL0003', 'DELIVERY-0003', TO_DATE('2025-01-10','YYYY-MM-DD'), 'Standard', '26, Tmn Cempaka, Batu Gajah', 'FGH345', 'Toyota HiAce', 30, 'Delivered', 'No', 'BRA0003', 'BRANCH-0003', 'SUP0003', 'SUPPLIER-0003');
+INSERT INTO DELIVERY VALUES ('DEL0004', 'DELIVERY-0004', TO_DATE('2025-01-12','YYYY-MM-DD'), 'Express', '32, Jln Mawar, Kampar', 'IJK456', 'Nissan Van', 12, 'Pending', 'Yes', 'BRA0004', 'BRANCH-0004', 'SUP0004', 'SUPPLIER-0004');
+INSERT INTO DELIVERY VALUES ('DEL0005', 'DELIVERY-0005', TO_DATE('2025-04-04','YYYY-MM-DD'), 'Standard', '54, Jln Merbau, Taiping', 'LMN567', 'Toyota HiAce', 50, 'Delivered', 'No', 'BRA0005', 'BRANCH-0005', 'SUP0005', 'SUPPLIER-0005');
+INSERT INTO DELIVERY VALUES ('DEL0006', 'DELIVERY-0006', TO_DATE('2025-04-07','YYYY-MM-DD'), 'Express', '79, Jln Dahlia, Menglembu', 'OPQ678', 'Nissan Van', 16, 'Delivered', 'Yes', 'BRA0006', 'BRANCH-0006', 'SUP0006', 'SUPPLIER-0006');
+INSERT INTO DELIVERY VALUES ('DEL0007', 'DELIVERY-0007', TO_DATE('2025-04-09','YYYY-MM-DD'), 'Standard', '133, Jln Tasek, Chemor', 'RST789', 'Toyota HiAce', 45, 'Delivered', 'No', 'BRA0007', 'BRANCH-0007', 'SUP0007', 'SUPPLIER-0007');
+INSERT INTO DELIVERY VALUES ('DEL0008', 'DELIVERY-0008', TO_DATE('2025-04-15','YYYY-MM-DD'), 'Express', '220, Jln Cenderawasih, Gopeng', 'UVW890', 'Nissan Van', 14, 'Delivered', 'Yes', 'BRA0008', 'BRANCH-0008', 'SUP0008', 'SUPPLIER-0008');
+INSERT INTO DELIVERY VALUES ('DEL0009', 'DELIVERY-0009', TO_DATE('2025-04-18','YYYY-MM-DD'), 'Standard', '305, Jln Merdeka, Teluk Intan', 'XYZ012', 'Toyota HiAce', 60, 'Delivered', 'No', 'BRA0009', 'BRANCH-0009', 'SUP0009', 'SUPPLIER-0009');
+INSERT INTO DELIVERY VALUES ('DEL0010', 'DELIVERY-0010', TO_DATE('2025-04-20','YYYY-MM-DD'), 'Express', '416, Jln Nanas, Sitiawan', 'ABC234', 'Nissan Van', 18, 'Delivered', 'Yes', 'BRA0010', 'BRANCH-0010', 'SUP0010', 'SUPPLIER-0010');
+
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0001', 'ORDER-0001', TO_DATE('2024-05-11', 'YYYY-MM-DD'), TO_DATE('2024-06-11', 'YYYY-MM-DD'), 'Online', '2', 'Yes', 'Yes', 'Shipped', 'No', 'DEL0001', 'DELIVERY-0001', 'SUP0001', 'SUPPLIER-0001');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0002', 'ORDER-0002', TO_DATE('2024-05-12', 'YYYY-MM-DD'), TO_DATE('2024-06-12', 'YYYY-MM-DD'), 'In Store', '1', 'No', 'No', 'Processing', 'No', 'DEL0002', 'DELIVERY-0002', 'SUP0002', 'SUPPLIER-0002');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0003', 'ORDER-0003', TO_DATE('2024-05-13', 'YYYY-MM-DD'), TO_DATE('2024-06-13', 'YYYY-MM-DD'), 'Online', '5', 'Yes', 'Yes', 'Delivered', 'No', 'DEL0003', 'DELIVERY-0003', 'SUP0003', 'SUPPLIER-0003');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0004', 'ORDER-0004', TO_DATE('2024-05-14', 'YYYY-MM-DD'), TO_DATE('2024-06-14', 'YYYY-MM-DD'), ':Phone', '10', 'Yes', 'Yes', 'Delivered', 'Yes', 'DEL0004', 'DELIVERY-0004', 'SUP0004', 'SUPPLIER-0004');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0005', 'ORDER-0005', TO_DATE('2024-05-15', 'YYYY-MM-DD'), TO_DATE('2024-06-15', 'YYYY-MM-DD'), 'In Store', '1', 'No', 'No', 'Processing', 'No', 'DEL0005', 'DELIVERY-0005', 'SUP0005', 'SUPPLIER-0005');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0006', 'ORDER-0006', TO_DATE('2024-05-16', 'YYYY-MM-DD'), TO_DATE('2024-06-16', 'YYYY-MM-DD'), 'Online', '3', 'Yes', 'Yes', 'Shipped', 'No', 'DEL0006', 'DELIVERY-0006', 'SUP0006', 'SUPPLIER-0006');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0007', 'ORDER-0007', TO_DATE('2024-05-17', 'YYYY-MM-DD'), TO_DATE('2024-06-17', 'YYYY-MM-DD'), 'Phone', '6', 'Yes', 'No', 'Delivered', 'No', 'DEL0007', 'DELIVERY-0007', 'SUP0007', 'SUPPLIER-0007');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0008', 'ORDER-0008', TO_DATE('2024-05-18', 'YYYY-MM-DD'), TO_DATE('2024-06-18', 'YYYY-MM-DD'), 'Online', '2', 'Yes', 'Yes', 'Shipped', 'No', 'DEL0008', 'DELIVERY-0008', 'SUP0008', 'SUPPLIER-0008');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0009', 'ORDER-0009', TO_DATE('2024-05-19', 'YYYY-MM-DD'), TO_DATE('2024-06-19', 'YYYY-MM-DD'), 'In Store', '4', 'No', 'No', 'Cancelled', 'No', 'DEL0009', 'DELIVERY-0009', 'SUP0009', 'SUPPLIER-0009');
+INSERT INTO ORDERS (Order_ID, Order_Ref_Number, Order_Date, Order_Due, Order_Channel, Quantity_Ordered, Delivery_Required, Discount_Applied, Order_Status, Return_Needed, Delivery_ID, Delivery_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('ORD0010', 'ORDER-0010', TO_DATE('2024-05-20', 'YYYY-MM-DD'), TO_DATE('2024-06-20', 'YYYY-MM-DD'), 'Online', '1', 'Yes', 'Yes', 'Delivered', 'Yes', 'DEL0010', 'DELIVERY-0010', 'SUP0010', 'SUPPLIER-0010');
+
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0001', 'PAYMENT-0001', 50.00, 45.00, 'Cash', 'In-Store', 'Completed', TO_DATE('2025-06-01', 'YYYY-MM-DD'), TO_DATE('2025-06-01', 'YYYY-MM-DD'), 'Payment for bulk A4 paper order', 'SUP0001', 'SUPPLIER-0001', 'ORD0001', 'ORDER-0001');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0002', 'PAYMENT-0002', 70.00, 56.00, 'Credit Card', 'Online', 'Completed', TO_DATE('2025-06-02', 'YYYY-MM-DD'), TO_DATE('2025-06-02', 'YYYY-MM-DD'), 'Payment for notebook', 'SUP0002', 'SUPPLIER-0002', 'ORD0002', 'ORDER-0002');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0003', 'PAYMENT-0003', 25.00, 23.75, 'Credit Card', 'In-Store', 'Completed', TO_DATE('2025-06-04', 'YYYY-MM-DD'), TO_DATE('2025-06-04', 'YYYY-MM-DD'), 'Payment for markers', 'SUP0003', 'SUPPLIER-0003', 'ORD0003', 'ORDER-0003');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0004', 'PAYMENT-0004', 40.00, 36.00, 'Debit Card', 'Online', 'Completed', TO_DATE('2025-06-05', 'YYYY-MM-DD'), TO_DATE('2025-06-05', 'YYYY-MM-DD'), 'Payment for office supply restock', 'SUP0004', 'SUPPLIER-0004', 'ORD0004', 'ORDER-0004');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0005', 'PAYMENT-0005', 36.00, 64.00, 'Cash', 'In-Store', 'Completed', TO_DATE('2025-06-06', 'YYYY-MM-DD'), TO_DATE('2025-06-06', 'YYYY-MM-DD'), 'Payment for lamination service', 'SUP0005', 'SUPPLIER-0005', 'ORD0005', 'ORDER-0005');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0006', 'PAYMENT-0006', 33.00, 29.70, 'Credit Card', 'Online', 'Completed', TO_DATE('2025-06-07', 'YYYY-MM-DD'), TO_DATE('2025-06-07', 'YYYY-MM-DD'), 'Payment for discounted stationery combo', 'SUP0006', 'SUPPLIER-0006', 'ORD0006', 'ORDER-0006');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0007', 'PAYMENT-0007', 27.50, 22.00, 'Credit Card', 'In-Store', 'Completed', TO_DATE('2025-06-08', 'YYYY-MM-DD'), TO_DATE('2025-06-08', 'YYYY-MM-DD'), 'Payment for highlighters', 'SUP0007', 'SUPPLIER-0007', 'ORD0007', 'ORDER-0007');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0008', 'PAYMENT-0008', 60.00, 54.00, 'Cash', 'Online', 'Completed', TO_DATE('2025-06-09', 'YYYY-MM-DD'), TO_DATE('2025-06-09', 'YYYY-MM-DD'), 'Payment for pens', 'SUP0008', 'SUPPLIER-0008', 'ORD0008', 'ORDER-0008');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0009', 'PAYMENT-0009', 45.00, 40.50, 'Debit Card', 'In-Store', 'Completed', TO_DATE('2025-06-10', 'YYYY-MM-DD'), TO_DATE('2025-06-10', 'YYYY-MM-DD'), 'Payment for binders', 'SUP0009', 'SUPPLIER-0009', 'ORD0009', 'ORDER-0009');
+INSERT INTO PAYMENT (Payment_ID, Payment_Ref_Number, Total_Amount, Discounted_Amount, Payment_Method, Payment_Channel, Payment_Status, Issued_Date, Completed_Date, Payment_Description, Supplier_ID, Supplier_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PAY0010', 'PAYMENT-0010', 15.00, 13.50, 'Debit Card', 'Online', 'Completed', TO_DATE('2025-06-11', 'YYYY-MM-DD'), TO_DATE('2025-06-11', 'YYYY-MM-DD'), 'Payment for personalised pens', 'SUP0010', 'SUPPLIER-0010', 'ORD0010', 'ORDER-0010');
+
+INSERT INTO VIP_CARD VALUES ('CAR0001', 'CARD-0001', TO_DATE('2025-01-15', 'YYYY-MM-DD'), TO_DATE('2026-01-15', 'YYYY-MM-DD'), 'Suspended', 100, 0.05, 0, 5, 50,'PAY0001', 'PAYMENT-0001','BRA0001', 'BRANCH-0001', 'INV0001', 'INVENTORY-0001');
+INSERT INTO VIP_CARD VALUES ('CAR0002', 'CARD-0002', TO_DATE('2025-01-20', 'YYYY-MM-DD'), TO_DATE('2026-01-20', 'YYYY-MM-DD'), 'Active', 250, 0.10, 1, 10, 100,'PAY0002', 'PAYMENT-0002','BRA0002', 'BRANCH-0002', 'INV0002', 'INVENTORY-0002');
+INSERT INTO VIP_CARD VALUES ('CAR0003', 'CARD-0003', TO_DATE('2025-02-05', 'YYYY-MM-DD'), TO_DATE('2026-02-05', 'YYYY-MM-DD'), 'Active', 0, 0.00, 0, 0, 0,'PAY0003', 'PAYMENT-0003','BRA0003', 'BRANCH-0003', 'INV0003', 'INVENTORY-0003');
+INSERT INTO VIP_CARD VALUES ('CAR0004', 'CARD-0004', TO_DATE('2025-04-18', 'YYYY-MM-DD'), TO_DATE('2026-04-18', 'YYYY-MM-DD'), 'Suspended', 500, 0.15, 1, 20, 250,'PAY0004', 'PAYMENT-0004','BRA0004', 'BRANCH-0004', 'INV0004', 'INVENTORY-0004');
+INSERT INTO VIP_CARD VALUES ('CAR0005', 'CARD-0005', TO_DATE('2025-04-30', 'YYYY-MM-DD'), TO_DATE('2026-04-30', 'YYYY-MM-DD'), 'Active', 300, 0.12, 1, 12, 120,'PAY0005', 'PAYMENT-0005','BRA0005', 'BRANCH-0005', 'INV0005', 'INVENTORY-0005');
+INSERT INTO VIP_CARD VALUES ('CAR0006', 'CARD-0006', TO_DATE('2025-05-04', 'YYYY-MM-DD'), TO_DATE('2026-05-04', 'YYYY-MM-DD'), 'Active', 0, 0.00, 0, 0, 0,'PAY0006', 'PAYMENT-0006','BRA0006', 'BRANCH-0006', 'INV0006', 'INVENTORY-0006');
+INSERT INTO VIP_CARD VALUES ('CAR0007', 'CARD-0007', TO_DATE('2025-06-06', 'YYYY-MM-DD'), TO_DATE('2026-06-06', 'YYYY-MM-DD'), 'Active', 400, 0.18, 1, 16, 160,'PAY0007', 'PAYMENT-0007','BRA0007', 'BRANCH-0007', 'INV0007', 'INVENTORY-0007');
+INSERT INTO VIP_CARD VALUES ('CAR0008', 'CARD-0008', TO_DATE('2025-06-10', 'YYYY-MM-DD'), TO_DATE('2026-06-10', 'YYYY-MM-DD'), 'Active', 350, 0.16, 1, 14, 140,'PAY0008', 'PAYMENT-0008','BRA0008', 'BRANCH-0008', 'INV0008', 'INVENTORY-0008'); 
+INSERT INTO VIP_CARD VALUES ('CAR0009', 'CARD-0009', TO_DATE('2025-06-12', 'YYYY-MM-DD'), TO_DATE('2026-06-12', 'YYYY-MM-DD'), 'Suspended', 0, 0.00, 0, 0, 0,'PAY0009', 'PAYMENT-0009','BRA0009', 'BRANCH-0009', 'INV0009', 'INVENTORY-0009');
+INSERT INTO VIP_CARD VALUES ('CAR0010', 'CARD-0010', TO_DATE('2025-06-15', 'YYYY-MM-DD'), TO_DATE('2026-06-15', 'YYYY-MM-DD'), 'Active', 450, 0.20, 1, 18, 200,'PAY0010', 'PAYMENT-0010','BRA0010', 'BRANCH-0010', 'INV0010', 'INVENTORY-0010');
+
+INSERT INTO SERVICE VALUES ('SER0001', 'SERVICE-0001', 'Printing Name Card', 'Available', 30, 60, 'No', 5.65, 'No', 'Name Card Printing', 'PAY0001', 'PAYMENT-0001');
+INSERT INTO SERVICE VALUES ('SER0002', 'SERVICE-0002', 'Binding', 'Available', 50, 90, 'Yes', 0.00, 'No', 'Thesis Binding', 'PAY0002', 'PAYMENT-0002');
+INSERT INTO SERVICE VALUES ('SER0003', 'SERVICE-0003', 'Lamination', 'Available', 20, 30, 'No', 5.99, 'Yes', 'Certificate Lamination', 'PAY0003', 'PAYMENT-0003');
+INSERT INTO SERVICE VALUES ('SER0004', 'SERVICE-0004', 'Printing Banner', 'Available', 100, 120, 'Yes', 0.00, 'Yes', 'Large Banner Printing', 'PAY0004', 'PAYMENT-0004');
+INSERT INTO SERVICE VALUES ('SER0005', 'SERVICE-0005', 'File Binding', 'Suspended', 45, 60, 'Yes', 0.00, 'No', 'File Binding', 'PAY0005', 'PAYMENT-0005');
+INSERT INTO SERVICE VALUES ('SER0006', 'SERVICE-0006', 'Poster Printing', 'Available', 80, 90, 'No', 10.75, 'No', 'Poster Printing', 'PAY0006', 'PAYMENT-0006');
+INSERT INTO SERVICE VALUES ('SER0007', 'SERVICE-0007', 'T-shirt Printing', 'Suspended', 150, 100, 'Yes', 0.00, 'Yes', 'T-shirt Printing', 'PAY0007', 'PAYMENT-0007');
+INSERT INTO SERVICE VALUES ('SER0008', 'SERVICE-0008', 'Certificate Printing', 'Available', 25, 45, 'No', 5.45, 'Yes', 'Certificate Printing', 'PAY0008', 'PAYMENT-0008');
+INSERT INTO SERVICE VALUES ('SER0009', 'SERVICE-0009', 'Badge Making', 'Available', 35, 60, 'No', 5.95, 'No', 'Name Badge Making', 'PAY0009', 'PAYMENT-0009');
+INSERT INTO SERVICE VALUES ('SER0010', 'SERVICE-0010', 'Ribbon Printing', 'Suspended', 40, 30, 'No', 10, 'Yes', 'Ribbon Printing', 'PAY0010', 'PAYMENT-0010');
+
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0001', 'CUSTOM-0001', 'Ring', 'Gold', 'Love', '2', '350.00', TO_DATE('2024-05-10', 'YYYY-MM-DD'), TO_DATE('2024-06-10', 'YYYY-MM-DD'), 'Completed', 'Pickup', 'PAY0001', 'PAYMENT-0001');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0002', 'CUSTOM-0002', 'Plaque', 'Steel', 'Award', '1', '120.00', TO_DATE('2024-05-11', 'YYYY-MM-DD'), TO_DATE('2024-06-12', 'YYYY-MM-DD'), 'In Progress', 'Delivery', 'PAY0002', 'PAYMENT-0002');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0003', 'CUSTOM-0003', 'Tag', 'Plastic', 'Brave', '5', '200.00', TO_DATE('2024-05-13', 'YYYY-MM-DD'), TO_DATE('2024-06-14', 'YYYY-MM-DD'), 'Pending', 'Pickup', 'PAY0003', 'PAYMENT-0003');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0004', 'CUSTOM-0004', 'Keychain', 'Wood', 'Smile', '10', '180.00', TO_DATE('2024-05-15', 'YYYY-MM-DD'), TO_DATE('2024-06-15', 'YYYY-MM-DD'), 'Completed', 'Delivery', 'PAY0004', 'PAYMENT-0004');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0005', 'CUSTOM-0005', 'Ring', 'Steel', 'Hope', '1', '90.00', TO_DATE('2024-05-17', 'YYYY-MM-DD'), TO_DATE('2024-06-15', 'YYYY-MM-DD'), 'In Progress', 'Pickup', 'PAY0005', 'PAYMENT-0005');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0006', 'CUSTOM-0006', 'Plaque', 'Plastic', 'Respect', '3', '210.00', TO_DATE('2024-05-19', 'YYYY-MM-DD'), TO_DATE('2024-06-14', 'YYYY-MM-DD'), 'Pending', 'Delivery', 'PAY0006', 'PAYMENT-0006');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0007', 'CUSTOM-0007', 'Tag', 'Gold', 'Shine', '6', '300.00', TO_DATE('2024-05-21', 'YYYY-MM-DD'), TO_DATE('2024-06-13', 'YYYY-MM-DD'), 'Completed', 'Pickup', 'PAY0007', 'PAYMENT-0007');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0008', 'CUSTOM-0008', 'Keychain', 'Wood', 'Dream', '2', '150.00', TO_DATE('2024-05-23', 'YYYY-MM-DD'), TO_DATE('2024-06-12', 'YYYY-MM-DD'), 'In Progress', 'Delivery', 'PAY0008', 'PAYMENT-0008');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0009', 'CUSTOM-0009', 'Ring', 'Plastic', 'Power', '4', '220.00', TO_DATE('2024-05-25', 'YYYY-MM-DD'), TO_DATE('2024-06-11', 'YYYY-MM-DD'), 'Pending', 'Pickup', 'PAY0009', 'PAYMENT-0009');
+INSERT INTO CUSTOM_ITEM_REQUEST (Custom_ID, Custom_Ref_Number, Item_Type, Material_Choice, Text_Engraved, Quantity_Needed, Estimate_Cost, Request_Date, Completion_Date, Request_Status, Collection_Method, Payment_ID, Payment_Ref_Number) VALUES ('CUS0010', 'CUSTOM-0010', 'Plaque', 'Steel', 'Truth', '1', '100.00', TO_DATE('2024-05-27', 'YYYY-MM-DD'), TO_DATE('2024-06-10', 'YYYY-MM-DD'), 'Completed', 'Delivery', 'PAY0010', 'PAYMENT-0010');
+
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0001', 'RETURN-0001', TO_DATE('2025-06-03', 'YYYY-MM-DD'), 'Damaged Cover', 'Poor', 'Approved', 'Yes', 10.00, 'Cash', TO_DATE('2025-06-04', 'YYYY-MM-DD'), 'PAY0001', 'PAYMENT-0001', 'SUP0001', 'SUPPLIER-0001');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0002', 'RETURN-0002', TO_DATE('2025-06-07', 'YYYY-MM-DD'), 'Wrong Item Sent', 'New', 'Approved', 'Yes', 12.00, 'Card', TO_DATE('2025-06-08', 'YYYY-MM-DD'), 'PAY0002', 'PAYMENT-0002', 'SUP0002', 'SUPPLIER-0002');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0003', 'RETURN-0003', TO_DATE('2025-06-10', 'YYYY-MM-DD'), 'Ink Leakage', 'Defective', 'Approved', 'Yes', 5.50, 'Credit', TO_DATE('2025-06-11', 'YYYY-MM-DD'), 'PAY0003', 'PAYMENT-0003', 'SUP0003', 'SUPPLIER-0003');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0004', 'RETURN-0004', TO_DATE('2025-06-11', 'YYYY-MM-DD'), 'Not As Described', 'Used', 'Rejected', 'No', 0.00, 'N/A', NULL, 'PAY0004', 'PAYMENT-0004', 'SUP0004', 'SUPPLIER-0004');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0005', 'RETURN-0005', TO_DATE('2025-06-13', 'YYYY-MM-DD'), 'Late Delivery', 'New', 'Approved', 'Yes', 8.00, 'Cash', TO_DATE('2025-06-14', 'YYYY-MM-DD'), 'PAY0005', 'PAYMENT-0005', 'SUP0005', 'SUPPLIER-0005');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0006', 'RETURN-0006', TO_DATE('2025-06-14', 'YYYY-MM-DD'), 'Packaging Damaged', 'Poor', 'Approved', 'Yes', 3.00, 'Credit', TO_DATE('2025-06-15', 'YYYY-MM-DD'), 'PAY0006', 'PAYMENT-0006', 'SUP0006', 'SUPPLIER-0006');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0007', 'RETURN-0007', TO_DATE('2025-06-15', 'YYYY-MM-DD'), 'Wrong Size Binder', 'New', 'Approved', 'Yes', 7.00, 'Card', TO_DATE('2025-06-16', 'YYYY-MM-DD'), 'PAY0007', 'PAYMENT-0007', 'SUP0007', 'SUPPLIER-0007');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0008', 'RETURN-0008', TO_DATE('2025-06-16', 'YYYY-MM-DD'), 'Broken Ruler', 'Defective', 'Approved', 'Yes', 2.50, 'Cash', TO_DATE('2025-06-17', 'YYYY-MM-DD'), 'PAY0008', 'PAYMENT-0008', 'SUP0008', 'SUPPLIER-0008');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0009', 'RETURN-0009', TO_DATE('2025-06-17', 'YYYY-MM-DD'), 'Missing Pages', 'Poor', 'Approved', 'Yes', 6.75, 'Credit', TO_DATE('2025-06-18', 'YYYY-MM-DD'), 'PAY0009', 'PAYMENT-0009', 'SUP0009', 'SUPPLIER-0009');
+INSERT INTO RETURN (Return_ID, Return_Ref_Number, Return_Date, Return_Reason, Return_Condition, Return_Status, Refund_Needed, Refund_Amount, Refund_Method, Refund_Date, Payment_ID, Payment_Ref_Number, Supplier_ID, Supplier_Ref_Number) VALUES ('RET0010', 'RETURN-0010', TO_DATE('2025-06-18', 'YYYY-MM-DD'), 'Incomplete Set', 'New', 'Rejected', 'No', 0.00, 'N/A', NULL, 'PAY0010', 'PAYMENT-0010', 'SUP0010', 'SUPPLIER-0010');
+
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0001', 'FEEDBACK-0001', 'Complaint', TO_DATE('2025-06-01', 'YYYY-MM-DD'), 'Pen ink dried up', 'High', 'Resolved', 'Replaced Item', 3, 'No', 'SUP0001', 'SUPPLIER-0001', 'DEL0001', 'DELIVERY-0001', 'PAY0001', 'PAYMENT-0001', 'RET0001', 'RETURN-0001');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0002', 'FEEDBACK-0002', 'Suggestion', TO_DATE('2025-06-02', 'YYYY-MM-DD'), 'Add more colour variants', 'Medium', 'In Progress', 'Noted for future', 5, 'Yes', 'SUP0002', 'SUPPLIER-0002', 'DEL0002', 'DELIVERY-0002', 'PAY0002', 'PAYMENT-0002', 'RET0002', 'RETURN-0002');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0003', 'FEEDBACK-0003', 'Complaint', TO_DATE('2025-06-03', 'YYYY-MM-DD'), 'Broken scale received', 'High', 'Resolved', 'Refunded', 4, 'No', 'SUP0003', 'SUPPLIER-0003', 'DEL0003', 'DELIVERY-0003', 'PAY0003', 'PAYMENT-0003', 'RET0003', 'RETURN-0003');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0004', 'FEEDBACK-0004', 'Praise', TO_DATE('2025-06-04', 'YYYY-MM-DD'), 'Quick delivery', 'Low', 'Closed', 'Thanked customer', 5, 'No', 'SUP0004', 'SUPPLIER-0004', 'DEL0004', 'DELIVERY-0004', 'PAY0004', 'PAYMENT-0004', 'RET0004', 'RETURN-0004');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0005', 'FEEDBACK-0005', 'Complaint', TO_DATE('2025-06-05', 'YYYY-MM-DD'), 'Missing sharpener', 'Medium', 'Resolved', 'Item sent separately', 3, 'Yes', 'SUP0005', 'SUPPLIER-0005', 'DEL0005', 'DELIVERY-0005', 'PAY0005', 'PAYMENT-0005', 'RET0005', 'RETURN-0005');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0006', 'FEEDBACK-0006', 'Suggestion', TO_DATE('2025-06-07', 'YYYY-MM-DD'), 'Restock art paper', 'Low', 'In Progress', 'Request sent to branch', 4, 'Yes', 'SUP0006', 'SUPPLIER-0006', 'DEL0006', 'DELIVERY-0006', 'PAY0006', 'PAYMENT-0006', 'RET0006', 'RETURN-0006');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0007', 'FEEDBACK-0007', 'Complaint', TO_DATE('2025-06-08', 'YYYY-MM-DD'), 'Highlighter not working', 'High', 'Resolved', 'Exchanged Item', 4, 'No', 'SUP0007', 'SUPPLIER-0007', 'DEL0007', 'DELIVERY-0007', 'PAY0007', 'PAYMENT-0007', 'RET0007', 'RETURN-0007');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0008', 'FEEDBACK-0008', 'Praise', TO_DATE('2025-06-09', 'YYYY-MM-DD'), 'Helpful staff', 'Low', 'Closed', 'Noted for record', 5, 'No', 'SUP0008', 'SUPPLIER-0008', 'DEL0008', 'DELIVERY-0008', 'PAY0008', 'PAYMENT-0008', 'RET0008', 'RETURN-0008');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0009', 'FEEDBACK-0009', 'Complaint', TO_DATE('2025-06-09', 'YYYY-MM-DD'), 'Notebook with torn pages', 'High', 'Resolved', 'Replaced immediately', 3, 'No', 'SUP0009', 'SUPPLIER-0009', 'DEL0009', 'DELIVERY-0009', 'PAY0009', 'PAYMENT-0009', 'RET0009', 'RETURN-0009');
+INSERT INTO FEEDBACK (Feedback_ID, Feedback_Ref_Number, Feedback_Type, Date_Received, Description, Urgency_Level, Feedback_Status, Action_Taken, Feedback_Rating, Follow_Up_Required, Supplier_ID, Supplier_Ref_Number, Delivery_ID, Delivery_Ref_Number, Payment_ID, Payment_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('FEE0010', 'FEEDBACK-0010', 'Suggestion', TO_DATE('2025-06-10', 'YYYY-MM-DD'), 'Add more payment options', 'Medium', 'In Progress', 'Under Review', 4, 'Yes', 'SUP0010', 'SUPPLIER-0010', 'DEL0010', 'DELIVERY-0010', 'PAY0010', 'PAYMENT-0010', 'RET0010', 'RETURN-0010');
+
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ( 'STA0001', 'STAFF-0001', 'Assistant', '65052949', 'C', 3406.98, 'Sales', 'Active', TO_DATE('2019-10-21', 'YYYY-MM-DD'), 4.5, 'PER0011', 'PERSON-0011', 'INV0001', 'INVENTORY-0001', 'ADJ0001', 'ADJUSTMENT-0001', 'MAI0001', 'MAINTENANCE-0001','WAR0001', 'WAREHOUSE-0001');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0002', 'STAFF-0002', 'Manager', '65346696', 'A', 6993.63, 'HR', 'Active', TO_DATE('2019-12-13', 'YYYY-MM-DD'), 4.6, 'PER0012', 'PERSON-0012', 'INV0002', 'INVENTORY-0002', 'ADJ0002', 'ADJUSTMENT-0002', 'MAI0002', 'MAINTENANCE-0002', 'WAR0002', 'WAREHOUSE-0002');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0003', 'STAFF-0003', 'Assistant', '12414632', 'C', 3406.98, 'Logistics', 'Active', TO_DATE('2020-12-28', 'YYYY-MM-DD'), 4.1, 'PER0013', 'PERSON-0013', 'INV0003', 'INVENTORY-0003', 'ADJ0003', 'ADJUSTMENT-0003', 'MAI0003', 'MAINTENANCE-0003',  'WAR0003', 'WAREHOUSE-0003');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0004', 'STAFF-0004', 'Assistant', '75641099', 'C', 3406.98, 'HR', 'Active', TO_DATE('2019-09-07', 'YYYY-MM-DD'), 3, 'PER0014', 'PERSON-0014', 'INV0004', 'INVENTORY-0004', 'ADJ0004', 'ADJUSTMENT-0004', 'MAI0004', 'MAINTENANCE-0004', 'WAR0004', 'WAREHOUSE-0004');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0005', 'STAFF-0005', 'Assistant', '45545380', 'B', 4391.24, 'HR', 'Active', TO_DATE('2021-06-15', 'YYYY-MM-DD'), 3.7, 'PER0015', 'PERSON-0015', 'INV0005', 'INVENTORY-0005', 'ADJ0005', 'ADJUSTMENT-0005', 'MAI0005', 'MAINTENANCE-0005',  'WAR0005', 'WAREHOUSE-0005');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0006', 'STAFF-0006', 'Manager', '14286507', 'A', 6993.63, 'Sales', 'Active', TO_DATE('2022-02-13', 'YYYY-MM-DD'), 4.8, 'PER0016', 'PERSON-0016', 'INV0006', 'INVENTORY-0006', 'ADJ0006', 'ADJUSTMENT-0006', 'MAI0006', 'MAINTENANCE-0006', 'WAR0006', 'WAREHOUSE-0006');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0007', 'STAFF-0007', 'Assistant', '35687685', 'B', 4391.24, 'Logistics', 'Active', TO_DATE('2020-03-09', 'YYYY-MM-DD'), 4.2, 'PER0017', 'PERSON-0017', 'INV0007', 'INVENTORY-0007', 'ADJ0007', 'ADJUSTMENT-0007', 'MAI0007', 'MAINTENANCE-0007', 'WAR0007', 'WAREHOUSE-0007');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0008', 'STAFF-0008', 'Manager', '55364149', 'A', 6993.63, 'Sales', 'Active', TO_DATE('2020-10-05', 'YYYY-MM-DD'), 3.5, 'PER0018', 'PERSON-0018', 'INV0008', 'INVENTORY-0008', 'ADJ0008', 'ADJUSTMENT-0008', 'MAI0008', 'MAINTENANCE-0008', 'WAR0008', 'WAREHOUSE-0008');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0009', 'STAFF-0009', 'Assistant', '26354074', 'C', 3406.98, 'HR', 'Active', TO_DATE('2021-11-01', 'YYYY-MM-DD'), 3.7, 'PER0019', 'PERSON-0019', 'INV0009', 'INVENTORY-0009', 'ADJ0009', 'ADJUSTMENT-0009', 'MAI0009', 'MAINTENANCE-0009',  'WAR0009', 'WAREHOUSE-0009');
+INSERT INTO STAFF (Staff_ID, Staff_Ref_Number, Staff_Position, Bank_Account, Salary_Grade, Salary_Amount, Staff_Department, Employment_Status, Hired_Date, Performance_Rating, Person_ID, Person_Ref_Number, Inventory_ID, Inventory_Ref_Number, Adjustment_ID, Adjustment_Ref_Number, Maintenance_ID, Maintenance_Ref_Number, Warehouse_ID, Warehouse_Ref_Number) VALUES ('STA0010', 'STAFF-0010', 'Assistant', '87874065', 'B', 4391.24, 'Logistics', 'Active', TO_DATE('2020-07-06', 'YYYY-MM-DD'), 3.1, 'PER0020', 'PERSON-0020', 'INV0010', 'INVENTORY-0010', 'ADJ0010', 'ADJUSTMENT-0010', 'MAI0010', 'MAINTENANCE-0010', 'WAR0010', 'WAREHOUSE-0010');
+
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'PER0011', 'PERSON-0011'); 
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'PER0012', 'PERSON-0012');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'PER0013', 'PERSON-0013');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'PER0014', 'PERSON-0014');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'PER0015', 'PERSON-0015');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'PER0016', 'PERSON-0016');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'PER0017', 'PERSON-0017');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'PER0018', 'PERSON-0018');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'PER0019', 'PERSON-0019');
+INSERT INTO PERSON_PERSON (Person1_ID, Person1_Ref_Number, Person2_ID, Person2_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'PER0020', 'PERSON-0020');
+
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0001', 'PERSON-0001', 'PRO0001', 'PRODUCT-0001', '9550000000001'); 
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0002', 'PERSON-0002', 'PRO0002', 'PRODUCT-0002', '9550000000002');
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0003', 'PERSON-0003', 'PRO0003', 'PRODUCT-0003', '9550000000003');
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode)VALUES ('PER0004', 'PERSON-0004', 'PRO0004', 'PRODUCT-0004', '9550000000004'); 
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0005', 'PERSON-0005', 'PRO0005', 'PRODUCT-0005', '9550000000005'); 
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0006', 'PERSON-0006', 'PRO0006', 'PRODUCT-0006', '9550000000006');
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0007', 'PERSON-0007', 'PRO0007', 'PRODUCT-0007', '9550000000007'); 
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0008', 'PERSON-0008', 'PRO0008', 'PRODUCT-0008', '9550000000008');
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode)VALUES ('PER0009', 'PERSON-0009', 'PRO0009', 'PRODUCT-0009', '9550000000009');
+INSERT INTO PERSON_PRODUCT (Person_ID, Person_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('PER0010', 'PERSON-0010', 'PRO0010', 'PRODUCT-0010', '9550000000010');
+
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'SER0001', 'SERVICE-0001'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'SER0002', 'SERVICE-0002'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'SER0003', 'SERVICE-0003'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'SER0004', 'SERVICE-0004'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'SER0005', 'SERVICE-0005');
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'SER0006', 'SERVICE-0006'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'SER0007', 'SERVICE-0007'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'SER0008', 'SERVICE-0008'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'SER0009', 'SERVICE-0009'); 
+INSERT INTO PERSON_SERVICE (Person_ID, Person_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'SER0010', 'SERVICE-0010');
+
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'CUS0001', 'CUSTOM-0001'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'CUS0002', 'CUSTOM-0002'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'CUS0003', 'CUSTOM-0003'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'CUS0004', 'CUSTOM-0004'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'CUS0005', 'CUSTOM-0005'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'CUS0006', 'CUSTOM-0006'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'CUS0007', 'CUSTOM-0007');
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'CUS0008', 'CUSTOM-0008'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'CUS0009', 'CUSTOM-0009'); 
+INSERT INTO PERSON_CUSTOM_ITEM_REQUEST (Person_ID, Person_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'CUS0010', 'CUSTOM-0010');
+
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'RET0001', 'RETURN-0001'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'RET0002', 'RETURN-0002'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'RET0003', 'RETURN-0003'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'RET0004', 'RETURN-0004'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'RET0005', 'RETURN-0005'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'RET0006', 'RETURN-0006'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'RET0007', 'RETURN-0007');
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'RET0008', 'RETURN-0008'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'RET0009', 'RETURN-0009'); 
+INSERT INTO PERSON_RETURN (Person_ID, Person_Ref_Number, Return_ID, Return_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'RET0010', 'RETURN-0010');
+
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'PAY0001', 'PAYMENT-0001');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'PAY0002', 'PAYMENT-0002');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'PAY0003', 'PAYMENT-0003');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'PAY0004', 'PAYMENT-0004');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'PAY0005', 'PAYMENT-0005');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'PAY0006', 'PAYMENT-0006'); 
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'PAY0007', 'PAYMENT-0007');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'PAY0008', 'PAYMENT-0008');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'PAY0009', 'PAYMENT-0009');
+INSERT INTO PERSON_PAYMENT (Person_ID, Person_Ref_Number, Payment_ID, Payment_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'PAY0010', 'PAYMENT-0010');
+
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'BRA0001', 'BRANCH-0001');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'BRA0002', 'BRANCH-0002');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'BRA0003', 'BRANCH-0003');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'BRA0004', 'BRANCH-0004');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'BRA0005', 'BRANCH-0005');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'BRA0006', 'BRANCH-0006');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'BRA0007', 'BRANCH-0007');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'BRA0008', 'BRANCH-0008');
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'BRA0009', 'BRANCH-0009'); 
+INSERT INTO PERSON_BRANCH (Person_ID, Person_Ref_Number, Branch_ID, Branch_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'BRA0010', 'BRANCH-0010');
+
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'ORD0001', 'ORDER-0001'); 
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'ORD0002', 'ORDER-0002');
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'ORD0003', 'ORDER-0003');
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'ORD0004', 'ORDER-0004');
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'ORD0005', 'ORDER-0005'); 
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'ORD0006', 'ORDER-0006');
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'ORD0007', 'ORDER-0007'); 
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'ORD0008', 'ORDER-0008');
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'ORD0009', 'ORDER-0009'); 
+INSERT INTO PERSON_ORDERS (Person_ID, Person_Ref_Number, Order_ID, Order_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'ORD0010', 'ORDER-0010');
+
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'FEE0001', 'FEEDBACK-0001');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'FEE0002', 'FEEDBACK-0002'); 
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'FEE0003', 'FEEDBACK-0003'); 
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'FEE0004', 'FEEDBACK-0004');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'FEE0005', 'FEEDBACK-0005');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'FEE0006', 'FEEDBACK-0006');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'FEE0007', 'FEEDBACK-0007');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'FEE0008', 'FEEDBACK-0008');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'FEE0009', 'FEEDBACK-0009');
+INSERT INTO PERSON_FEEDBACK (Person_ID, Person_Ref_Number, Feedback_ID, Feedback_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'FEE0010', 'FEEDBACK-0010');
+
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0001', 'PERSON-0001', 'PRM0001', 'PROMOTION-0001');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0002', 'PERSON-0002', 'PRM0002', 'PROMOTION-0002');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0003', 'PERSON-0003', 'PRM0003', 'PROMOTION-0003');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0004', 'PERSON-0004', 'PRM0004', 'PROMOTION-0004');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0005', 'PERSON-0005', 'PRM0005', 'PROMOTION-0005');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0006', 'PERSON-0006', 'PRM0006', 'PROMOTION-0006');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0007', 'PERSON-0007', 'PRM0007', 'PROMOTION-0007');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0008', 'PERSON-0008', 'PRM0008', 'PROMOTION-0008');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0009', 'PERSON-0009', 'PRM0009', 'PROMOTION-0009');
+INSERT INTO PERSON_PROMOTION (Person_ID, Person_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('PER0010', 'PERSON-0010', 'PRM0010', 'PROMOTION-0010');
+
+INSERT INTO PERSON_DELIVERY VALUES ('PER0001', 'PERSON-0001', 'DEL0001', 'DELIVERY-0001');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0002', 'PERSON-0002', 'DEL0002', 'DELIVERY-0002');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0003', 'PERSON-0003', 'DEL0003', 'DELIVERY-0003');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0004', 'PERSON-0004', 'DEL0004', 'DELIVERY-0004');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0005', 'PERSON-0005', 'DEL0005', 'DELIVERY-0005');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0006', 'PERSON-0006', 'DEL0006', 'DELIVERY-0006');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0007', 'PERSON-0007', 'DEL0007', 'DELIVERY-0007');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0008', 'PERSON-0008', 'DEL0008', 'DELIVERY-0008');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0009', 'PERSON-0009', 'DEL0009', 'DELIVERY-0009');
+INSERT INTO PERSON_DELIVERY VALUES ('PER0010', 'PERSON-0010', 'DEL0010', 'DELIVERY-0010');
+
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0001', 'PERSON-0001', 'CAR0001', 'CARD-0001');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0002', 'PERSON-0002', 'CAR0002', 'CARD-0002');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0003', 'PERSON-0003', 'CAR0003', 'CARD-0003');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0004', 'PERSON-0004', 'CAR0004', 'CARD-0004');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0005', 'PERSON-0005', 'CAR0005', 'CARD-0005');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0006', 'PERSON-0006', 'CAR0006', 'CARD-0006');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0007', 'PERSON-0007', 'CAR0007', 'CARD-0007');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0008', 'PERSON-0008', 'CAR0008', 'CARD-0008');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0009', 'PERSON-0009', 'CAR0009', 'CARD-0009');
+INSERT INTO PERSON_VIP_CARD VALUES ('PER0010', 'PERSON-0010', 'CAR0010', 'CARD-0010');
+
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0001', 'STAFF-0001', 'DIS0001', 'DISPLAY-0001');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0002', 'STAFF-0002', 'DIS0002', 'DISPLAY-0002');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0003', 'STAFF-0003', 'DIS0003', 'DISPLAY-0003');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0004', 'STAFF-0004', 'DIS0004', 'DISPLAY-0004');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0005', 'STAFF-0005', 'DIS0005', 'DISPLAY-0005');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0006', 'STAFF-0006', 'DIS0006', 'DISPLAY-0006');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0007', 'STAFF-0007', 'DIS0007', 'DISPLAY-0007');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0008', 'STAFF-0008', 'DIS0008', 'DISPLAY-0008');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0009', 'STAFF-0009', 'DIS0009', 'DISPLAY-0009');
+INSERT INTO STAFF_DISPLAY_SECTION VALUES ('STA0010', 'STAFF-0010', 'DIS0010', 'DISPLAY-0010');
+
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0001', 'STAFF-0001', 'SUP0001', 'SUPPLIER-0001');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0002', 'STAFF-0002', 'SUP0002', 'SUPPLIER-0002');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0003', 'STAFF-0003', 'SUP0003', 'SUPPLIER-0003');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0004', 'STAFF-0004', 'SUP0004', 'SUPPLIER-0004');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0005', 'STAFF-0005', 'SUP0005', 'SUPPLIER-0005');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0006', 'STAFF-0006', 'SUP0006', 'SUPPLIER-0006');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0007', 'STAFF-0007', 'SUP0007', 'SUPPLIER-0007');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0008', 'STAFF-0008', 'SUP0008', 'SUPPLIER-0008');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0009', 'STAFF-0009', 'SUP0009', 'SUPPLIER-0009');
+INSERT INTO STAFF_SUPPLIER VALUES ('STA0010', 'STAFF-0010', 'SUP0010', 'SUPPLIER-0010');
+
+INSERT INTO STAFF_SHIFT VALUES ('STA0001', 'STAFF-0001', 'SHI0001', 'SHIFT-0001');
+INSERT INTO STAFF_SHIFT VALUES ('STA0002', 'STAFF-0002', 'SHI0002', 'SHIFT-0002');
+INSERT INTO STAFF_SHIFT VALUES ('STA0003', 'STAFF-0003', 'SHI0003', 'SHIFT-0003');
+INSERT INTO STAFF_SHIFT VALUES ('STA0004', 'STAFF-0004', 'SHI0004', 'SHIFT-0004');
+INSERT INTO STAFF_SHIFT VALUES ('STA0005', 'STAFF-0005', 'SHI0005', 'SHIFT-0005');
+INSERT INTO STAFF_SHIFT VALUES ('STA0006', 'STAFF-0006', 'SHI0006', 'SHIFT-0006');
+INSERT INTO STAFF_SHIFT VALUES ('STA0007', 'STAFF-0007', 'SHI0007', 'SHIFT-0007');
+INSERT INTO STAFF_SHIFT VALUES ('STA0008', 'STAFF-0008', 'SHI0008', 'SHIFT-0008');
+INSERT INTO STAFF_SHIFT VALUES ('STA0009', 'STAFF-0009', 'SHI0009', 'SHIFT-0009');
+INSERT INTO STAFF_SHIFT VALUES ('STA0010', 'STAFF-0010', 'SHI0010', 'SHIFT-0010');
+
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0001', 'SUPPLIER-0001', 'WAR0001', 'WAREHOUSE-0001');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0002', 'SUPPLIER-0002', 'WAR0002', 'WAREHOUSE-0002');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0003', 'SUPPLIER-0003', 'WAR0003', 'WAREHOUSE-0003');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0004', 'SUPPLIER-0004', 'WAR0004', 'WAREHOUSE-0004');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0005', 'SUPPLIER-0005', 'WAR0005', 'WAREHOUSE-0005');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0006', 'SUPPLIER-0006', 'WAR0006', 'WAREHOUSE-0006');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0007', 'SUPPLIER-0007', 'WAR0007', 'WAREHOUSE-0007');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0008', 'SUPPLIER-0008', 'WAR0008', 'WAREHOUSE-0008');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0009', 'SUPPLIER-0009', 'WAR0009', 'WAREHOUSE-0009');
+INSERT INTO SUPPLIER_WAREHOUSE VALUES ('SUP0010', 'SUPPLIER-0010', 'WAR0010', 'WAREHOUSE-0010');
+
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0001', 'SUPPLIER-0001', 'PRO0001', 'PRODUCT-0001', '9550000000001');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0002', 'SUPPLIER-0002', 'PRO0002', 'PRODUCT-0002', '9550000000002');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0003', 'SUPPLIER-0003', 'PRO0003', 'PRODUCT-0003', '9550000000003');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0004', 'SUPPLIER-0004', 'PRO0004', 'PRODUCT-0004', '9550000000004');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0005', 'SUPPLIER-0005', 'PRO0005', 'PRODUCT-0005', '9550000000005');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0006', 'SUPPLIER-0006', 'PRO0006', 'PRODUCT-0006', '9550000000006');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0007', 'SUPPLIER-0007', 'PRO0007', 'PRODUCT-0007', '9550000000007');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0008', 'SUPPLIER-0008', 'PRO0008', 'PRODUCT-0008', '9550000000008');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0009', 'SUPPLIER-0009', 'PRO0009', 'PRODUCT-0009', '9550000000009');
+INSERT INTO SUPPLIER_PRODUCT VALUES ('SUP0010', 'SUPPLIER-0010', 'PRO0010', 'PRODUCT-0010', '9550000000010');
+
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0001', 'SUPPLIER-0001', 'CAR0001', 'CARD-0001');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0002', 'SUPPLIER-0002', 'CAR0002', 'CARD-0002');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0003', 'SUPPLIER-0003', 'CAR0003', 'CARD-0003');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0004', 'SUPPLIER-0004', 'CAR0004', 'CARD-0004');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0005', 'SUPPLIER-0005', 'CAR0005', 'CARD-0005');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0006', 'SUPPLIER-0006', 'CAR0006', 'CARD-0006');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0007', 'SUPPLIER-0007', 'CAR0007', 'CARD-0007');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0008', 'SUPPLIER-0008', 'CAR0008', 'CARD-0008');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0009', 'SUPPLIER-0009', 'CAR0009', 'CARD-0009');
+INSERT INTO SUPPLIER_VIP_CARD VALUES ('SUP0010', 'SUPPLIER-0010', 'CAR0010', 'CARD-0010');
+
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'PAY0001', 'PAYMENT-0001');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'PAY0002', 'PAYMENT-0002');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'PAY0003', 'PAYMENT-0003');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'PAY0004', 'PAYMENT-0004');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'PAY0005', 'PAYMENT-0005');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'PAY0006', 'PAYMENT-0006');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'PAY0007', 'PAYMENT-0007');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'PAY0008', 'PAYMENT-0008');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'PAY0009', 'PAYMENT-0009');
+INSERT INTO PRODUCT_PAYMENT VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'PAY0010', 'PAYMENT-0010');
+
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'INV0001', 'INVENTORY-0001');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'INV0002', 'INVENTORY-0002');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'INV0003', 'INVENTORY-0003');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'INV0004', 'INVENTORY-0004');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'INV0005', 'INVENTORY-0005');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'INV0006', 'INVENTORY-0006');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'INV0007', 'INVENTORY-0007');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'INV0008', 'INVENTORY-0008');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'INV0009', 'INVENTORY-0009');
+INSERT INTO PRODUCT_INVENTORY VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'INV0010', 'INVENTORY-0010');
+
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'DIS0001', 'DISPLAY-0001');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'DIS0002', 'DISPLAY-0002');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'DIS0003', 'DISPLAY-0003');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'DIS0004', 'DISPLAY-0004');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'DIS0005', 'DISPLAY-0005');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'DIS0006', 'DISPLAY-0006');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'DIS0007', 'DISPLAY-0007');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'DIS0008', 'DISPLAY-0008');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'DIS0009', 'DISPLAY-0009');
+INSERT INTO PRODUCT_DISPLAY_SECTION VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'DIS0010', 'DISPLAY-0010');
+
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'RET0001', 'RETURN-0001');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'RET0002', 'RETURN-0002');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'RET0003', 'RETURN-0003');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'RET0004', 'RETURN-0004');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'RET0005', 'RETURN-0005');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'RET0006', 'RETURN-0006');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'RET0007', 'RETURN-0007');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'RET0008', 'RETURN-0008');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'RET0009', 'RETURN-0009');
+INSERT INTO PRODUCT_RETURN (Product_ID, Product_SKU, Product_Barcode, Return_ID, Return_Ref_Number) VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'RET0010', 'RETURN-0010');
+
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'PRM0001', 'PROMOTION-0001');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'PRM0002', 'PROMOTION-0002');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'PRM0003', 'PROMOTION-0003');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'PRM0004', 'PROMOTION-0004');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'PRM0005', 'PROMOTION-0005');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'PRM0006', 'PROMOTION-0006');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'PRM0007', 'PROMOTION-0007');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'PRM0008', 'PROMOTION-0008');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'PRM0009', 'PROMOTION-0009');
+INSERT INTO PRODUCT_PROMOTION (Product_ID, Product_SKU, Product_Barcode, Promotion_ID, Promotion_Ref_Number) VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'PRM0010', 'PROMOTION-0010');
+
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'ORD0001', 'ORDER-0001');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'ORD0002', 'ORDER-0002');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'ORD0003', 'ORDER-0003');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'ORD0004', 'ORDER-0004');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'ORD0005', 'ORDER-0005');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'ORD0006', 'ORDER-0006');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'ORD0007', 'ORDER-0007');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'ORD0008', 'ORDER-0008');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'ORD0009', 'ORDER-0009');
+INSERT INTO PRODUCT_ORDERS (Product_ID, Product_SKU, Product_Barcode, Order_ID, Order_Ref_Number) VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'ORD0010', 'ORDER-0010');
+
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'FEE0001', 'FEEDBACK-0001');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'FEE0002', 
+'FEEDBACK-0002');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'FEE0003', 'FEEDBACK-0003');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'FEE0004', 'FEEDBACK-0004');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'FEE0005', 'FEEDBACK-0005');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'FEE0006', 'FEEDBACK-0006');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'FEE0007', 'FEEDBACK-0007');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'FEE0008', 'FEEDBACK-0008');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'FEE0009', 'FEEDBACK-0009');
+INSERT INTO PRODUCT_FEEDBACK (Product_ID, Product_SKU, Product_Barcode, Feedback_ID, Feedback_Ref_Number) VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'FEE0010', 'FEEDBACK-0010');
+
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'SER0001', 'SERVICE-0001');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'SER0002', 'SERVICE-0002');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'SER0003', 'SERVICE-0003');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'SER0004', 'SERVICE-0004');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'SER0005', 'SERVICE-0005');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'SER0006', 'SERVICE-0006');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'SER0007', 'SERVICE-0007');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'SER0008', 'SERVICE-0008');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'SER0009', 'SERVICE-0009');
+INSERT INTO PRODUCT_SERVICE (Product_ID, Product_SKU, Product_Barcode, Service_ID, Service_Ref_Number) VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'SER0010', 'SERVICE-0010');
+
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0001', 'PRODUCT-0001', '9550000000001', 'CUS0001', 'CUSTOM-0001');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0002', 'PRODUCT-0002', '9550000000002', 'CUS0002', 'CUSTOM-0002');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0003', 'PRODUCT-0003', '9550000000003', 'CUS0003', 'CUSTOM-0003');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0004', 'PRODUCT-0004', '9550000000004', 'CUS0004', 'CUSTOM-0004');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0005', 'PRODUCT-0005', '9550000000005', 'CUS0005', 'CUSTOM-0005');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0006', 'PRODUCT-0006', '9550000000006', 'CUS0006', 'CUSTOM-0006');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0007', 'PRODUCT-0007', '9550000000007', 'CUS0007', 'CUSTOM-0007');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0008', 'PRODUCT-0008', '9550000000008', 'CUS0008', 'CUSTOM-0008');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0009', 'PRODUCT-0009', '9550000000009', 'CUS0009', 'CUSTOM-0009');
+INSERT INTO PRODUCT_CUSTOM_ITEM_REQUEST (Product_ID, Product_SKU, Product_Barcode, Custom_ID, Custom_Ref_Number) VALUES ('PRO0010', 'PRODUCT-0010', '9550000000010', 'CUS0010', 'CUSTOM-0010');
+
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0001', 'CARD-0001', 'PRM0001', 'PROMOTION-0001');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0002', 'CARD-0002', 'PRM0002', 'PROMOTION-0002');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0003', 'CARD-0003', 'PRM0003', 'PROMOTION-0003');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0004', 'CARD-0004', 'PRM0004', 'PROMOTION-0004');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0005', 'CARD-0005', 'PRM0005', 'PROMOTION-0005');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0006', 'CARD-0006', 'PRM0006', 'PROMOTION-0006');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0007', 'CARD-0007', 'PRM0007', 'PROMOTION-0007');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0008', 'CARD-0008', 'PRM0008', 'PROMOTION-0008');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0009', 'CARD-0009', 'PRM0009', 'PROMOTION-0009');
+INSERT INTO VIP_CARD_PROMOTION (Card_ID, Card_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('CAR0010', 'CARD-0010', 'PRM0010', 'PROMOTION-0010');
+
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0001', 'BRANCH-0001', 'PRO0001', 'PRODUCT-0001', '9550000000001');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0002', 'BRANCH-0002', 'PRO0002', 'PRODUCT-0002', '9550000000002');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0003', 'BRANCH-0003', 'PRO0003', 'PRODUCT-0003', '9550000000003');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0004', 'BRANCH-0004', 'PRO0004', 'PRODUCT-0004', '9550000000004');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0005', 'BRANCH-0005', 'PRO0005', 'PRODUCT-0005', '9550000000005');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0006', 'BRANCH-0006', 'PRO0006', 'PRODUCT-0006', '9550000000006');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0007', 'BRANCH-0007', 'PRO0007', 'PRODUCT-0007', '9550000000007');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0008', 'BRANCH-0008', 'PRO0008', 'PRODUCT-0008', '9550000000008');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0009', 'BRANCH-0009', 'PRO0009', 'PRODUCT-0009', '9550000000009');
+INSERT INTO BRANCH_PRODUCT (Branch_ID, Branch_Ref_Number, Product_ID, Product_SKU, Product_Barcode) VALUES ('BRA0010', 'BRANCH-0010', 'PRO0010', 'PRODUCT-0010', '9550000000010');
+
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0001', 'BRANCH-0001', 'CUS0001', 'CUSTOM-0001');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0002', 'BRANCH-0002', 'CUS0002', 'CUSTOM-0002');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0003', 'BRANCH-0003', 'CUS0003', 'CUSTOM-0003');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0004', 'BRANCH-0004', 'CUS0004', 'CUSTOM-0004');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0005', 'BRANCH-0005', 'CUS0005', 'CUSTOM-0005');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0006', 'BRANCH-0006', 'CUS0006', 'CUSTOM-0006');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0007', 'BRANCH-0007', 'CUS0007', 'CUSTOM-0007');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0008', 'BRANCH-0008', 'CUS0008', 'CUSTOM-0008');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0009', 'BRANCH-0009', 'CUS0009', 'CUSTOM-0009');
+INSERT INTO BRANCH_CUSTOM_ITEM_REQUEST (Branch_ID, Branch_Ref_Number, Custom_ID, Custom_Ref_Number) VALUES ('BRA0010', 'BRANCH-0010', 'CUS0010', 'CUSTOM-0010');
+
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0001', 'BRANCH-0001', 'PRM0001', 'PROMOTION-0001');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0002', 'BRANCH-0002', 'PRM0002', 'PROMOTION-0002');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0003', 'BRANCH-0003', 'PRM0003', 'PROMOTION-0003');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0004', 'BRANCH-0004', 'PRM0004', 'PROMOTION-0004');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0005', 'BRANCH-0005', 'PRM0005', 'PROMOTION-0005');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0006', 'BRANCH-0006', 'PRM0006', 'PROMOTION-0006');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0007', 'BRANCH-0007', 'PRM0007', 'PROMOTION-0007');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0008', 'BRANCH-0008', 'PRM0008', 'PROMOTION-0008');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0009', 'BRANCH-0009', 'PRM0009', 'PROMOTION-0009');
+INSERT INTO BRANCH_PROMOTION (Branch_ID, Branch_Ref_Number, Promotion_ID, Promotion_Ref_Number) VALUES ('BRA0010', 'BRANCH-0010', 'PRM0010', 'PROMOTION-0010');
+
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0001', 'BRANCH-0001', 'SER0001', 'SERVICE-0001');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0002', 'BRANCH-0002', 'SER0002', 'SERVICE-0002');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0003', 'BRANCH-0003', 'SER0003', 'SERVICE-0003');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0004', 'BRANCH-0004', 'SER0004', 'SERVICE-0004');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0005', 'BRANCH-0005', 'SER0005', 'SERVICE-0005');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0006', 'BRANCH-0006', 'SER0006', 'SERVICE-0006');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0007', 'BRANCH-0007', 'SER0007', 'SERVICE-0007');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0008', 'BRANCH-0008', 'SER0008', 'SERVICE-0008');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0009', 'BRANCH-0009', 'SER0009', 'SERVICE-0009');
+INSERT INTO BRANCH_SERVICE (Branch_ID, Branch_Ref_Number, Service_ID, Service_Ref_Number) VALUES ('BRA0010', 'BRANCH-0010', 'SER0010', 'SERVICE-0010');
+
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0001', 'BRANCH-0001', 'FEE0001', 'FEEDBACK-0001');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0002', 'BRANCH-0002', 'FEE0002', 'FEEDBACK-0002');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0003', 'BRANCH-0003', 'FEE0003', 'FEEDBACK-0003');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0004', 'BRANCH-0004', 'FEE0004', 'FEEDBACK-0004');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0005', 'BRANCH-0005', 'FEE0005', 'FEEDBACK-0005');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0006', 'BRANCH-0006', 'FEE0006', 'FEEDBACK-0006');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0007', 'BRANCH-0007', 'FEE0007', 'FEEDBACK-0007');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0008', 'BRANCH-0008', 'FEE0008', 'FEEDBACK-0008');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0009', 'BRANCH-0009', 'FEE0009', 'FEEDBACK-0009');
+INSERT INTO BRANCH_FEEDBACK (Branch_ID, Branch_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('BRA0010', 'BRANCH-0010', 'FEE0010', 'FEEDBACK-0010');
+
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0001', 'SERVICE-0001', 'FEE0001', 'FEEDBACK-0001');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0002', 'SERVICE-0002', 'FEE0002', 'FEEDBACK-0002');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0003', 'SERVICE-0003', 'FEE0003', 'FEEDBACK-0003');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0004', 'SERVICE-0004', 'FEE0004', 'FEEDBACK-0004');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0005', 'SERVICE-0005', 'FEE0005', 'FEEDBACK-0005');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0006', 'SERVICE-0006', 'FEE0006', 'FEEDBACK-0006');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0007', 'SERVICE-0007', 'FEE0007', 'FEEDBACK-0007');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0008', 'SERVICE-0008', 'FEE0008', 'FEEDBACK-0008');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0009', 'SERVICE-0009', 'FEE0009', 'FEEDBACK-0009');
+INSERT INTO SERVICE_FEEDBACK (Service_ID, Service_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('SER0010', 'SERVICE-0010', 'FEE0010', 'FEEDBACK-0010');
+
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0001', 'SERVICE-0001', 'ORD0001', 'ORDER-0001');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0002', 'SERVICE-0002', 'ORD0002', 'ORDER-0002');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0003', 'SERVICE-0003', 'ORD0003', 'ORDER-0003');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0004', 'SERVICE-0004', 'ORD0004', 'ORDER-0004');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0005', 'SERVICE-0005', 'ORD0005', 'ORDER-0005');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0006', 'SERVICE-0006', 'ORD0006', 'ORDER-0006');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0007', 'SERVICE-0007', 'ORD0007', 'ORDER-0007');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0008', 'SERVICE-0008', 'ORD0008', 'ORDER-0008');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0009', 'SERVICE-0009', 'ORD0009', 'ORDER-0009');
+INSERT INTO SERVICE_ORDERS (Service_ID, Service_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('SER0010', 'SERVICE-0010', 'ORD0010', 'ORDER-0010');
+
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0001', 'PROMOTION-0001', 'FEE0001', 'FEEDBACK-0001');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0002', 'PROMOTION-0002', 'FEE0002', 'FEEDBACK-0002');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0003', 'PROMOTION-0003', 'FEE0003', 'FEEDBACK-0003');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0004', 'PROMOTION-0004', 'FEE0004', 'FEEDBACK-0004');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0005', 'PROMOTION-0005', 'FEE0005', 'FEEDBACK-0005');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0006', 'PROMOTION-0006', 'FEE0006', 'FEEDBACK-0006');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0007', 'PROMOTION-0007', 'FEE0007', 'FEEDBACK-0007');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0008', 'PROMOTION-0008', 'FEE0008', 'FEEDBACK-0008');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0009', 'PROMOTION-0009', 'FEE0009', 'FEEDBACK-0009');
+INSERT INTO PROMOTION_FEEDBACK (Promotion_ID, Promotion_Ref_Number, Feedback_ID, Feedback_Ref_Number) 
+VALUES ('PRM0010', 'PROMOTION-0010', 'FEE0010', 'FEEDBACK-0010');
+
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0001', 'PROMOTION-0001', 'SER0001', 'SERVICE-0001');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0002', 'PROMOTION-0002', 'SER0002', 'SERVICE-0002');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0003', 'PROMOTION-0003', 'SER0003', 'SERVICE-0003');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0004', 'PROMOTION-0004', 'SER0004', 'SERVICE-0004');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0005', 'PROMOTION-0005', 'SER0005', 'SERVICE-0005');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0006', 'PROMOTION-0006', 'SER0006', 'SERVICE-0006');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0007', 'PROMOTION-0007', 'SER0007', 'SERVICE-0007');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0008', 'PROMOTION-0008', 'SER0008', 'SERVICE-0008');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0009', 'PROMOTION-0009', 'SER0009', 'SERVICE-0009');
+INSERT INTO PROMOTION_SERVICE (Promotion_ID, Promotion_Ref_Number, Service_ID, Service_Ref_Number) 
+VALUES ('PRM0010', 'PROMOTION-0010', 'SER0010', 'SERVICE-0010');
+
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0001', 'PROMOTION-0001', 'CUS0001', 'CUSTOM-0001');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0002', 'PROMOTION-0002', 'CUS0002', 'CUSTOM-0002');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0003', 'PROMOTION-0003', 'CUS0003', 'CUSTOM-0003');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0004', 'PROMOTION-0004', 'CUS0004', 'CUSTOM-0004');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0005', 'PROMOTION-0005', 'CUS0005', 'CUSTOM-0005');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0006', 'PROMOTION-0006', 'CUS0006', 'CUSTOM-0006');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0007', 'PROMOTION-0007', 'CUS0007', 'CUSTOM-0007');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0008', 'PROMOTION-0008', 'CUS0008', 'CUSTOM-0008');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0009', 'PROMOTION-0009', 'CUS0009', 'CUSTOM-0009');
+INSERT INTO PROMOTION_CUSTOM_ITEM_REQUEST (Promotion_ID, Promotion_Ref_Number, Custom_ID, Custom_Ref_Number) 
+VALUES ('PRM0010', 'PROMOTION-0010', 'CUS0010', 'CUSTOM-0010');
+
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0001', 'WAREHOUSE-0001', 'BRA0001', 'BRANCH-0001');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0002', 'WAREHOUSE-0002', 'BRA0002', 'BRANCH-0002');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0003', 'WAREHOUSE-0003', 'BRA0003', 'BRANCH-0003');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0004', 'WAREHOUSE-0004', 'BRA0004', 'BRANCH-0004');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0005', 'WAREHOUSE-0005', 'BRA0005', 'BRANCH-0005');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0006', 'WAREHOUSE-0006', 'BRA0006', 'BRANCH-0006');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0007', 'WAREHOUSE-0007', 'BRA0007', 'BRANCH-0007');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0008', 'WAREHOUSE-0008', 'BRA0008', 'BRANCH-0008');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0009', 'WAREHOUSE-0009', 'BRA0009', 'BRANCH-0009');
+INSERT INTO WAREHOUSE_BRANCH (Warehouse_ID, Warehouse_Ref_Number, Branch_ID, Branch_Ref_Number) 
+VALUES ('WAR0010', 'WAREHOUSE-0010', 'BRA0010', 'BRANCH-0010');
+
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0001', 'WAREHOUSE-0001', 'DEL0001', 'DELIVERY-0001');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0002', 'WAREHOUSE-0002', 'DEL0002', 'DELIVERY-0002');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0003', 'WAREHOUSE-0003', 'DEL0003', 'DELIVERY-0003');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0004', 'WAREHOUSE-0004', 'DEL0004', 'DELIVERY-0004');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0005', 'WAREHOUSE-0005', 'DEL0005', 'DELIVERY-0005');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0006', 'WAREHOUSE-0006', 'DEL0006', 'DELIVERY-0006');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0007', 'WAREHOUSE-0007', 'DEL0007', 'DELIVERY-0007');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0008', 'WAREHOUSE-0008', 'DEL0008', 'DELIVERY-0008');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0009', 'WAREHOUSE-0009', 'DEL0009', 'DELIVERY-0009');
+INSERT INTO WAREHOUSE_DELIVERY (Warehouse_ID, Warehouse_Ref_Number, Delivery_ID, Delivery_Ref_Number) 
+VALUES ('WAR0010', 'WAREHOUSE-0010', 'DEL0010', 'DELIVERY-0010');
+
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0001', 'DELIVERY-0001', 'PRO0001', 'PRODUCT-0001', '9550000000001');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0002', 'DELIVERY-0002', 'PRO0002', 'PRODUCT-0002', '9550000000002');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0003', 'DELIVERY-0003', 'PRO0003', 'PRODUCT-0003', '9550000000003');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0004', 'DELIVERY-0004', 'PRO0004', 'PRODUCT-0004', '9550000000004');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0005', 'DELIVERY-0005', 'PRO0005', 'PRODUCT-0005', '9550000000005');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0006', 'DELIVERY-0006', 'PRO0006', 'PRODUCT-0006', '9550000000006');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0007', 'DELIVERY-0007', 'PRO0007', 'PRODUCT-0007', '9550000000007');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0008', 'DELIVERY-0008', 'PRO0008', 'PRODUCT-0008', '9550000000008');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0009', 'DELIVERY-0009', 'PRO0009', 'PRODUCT-0009', '9550000000009');
+INSERT INTO DELIVERY_PRODUCT (Delivery_ID, Delivery_Ref_Number, Product_ID, Product_SKU, Product_Barcode) 
+VALUES ('DEL0010', 'DELIVERY-0010', 'PRO0010', 'PRODUCT-0010', '9550000000010');
+
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0001', 'CUSTOM-0001', 'ORD0001', 'ORDER-0001');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0002', 'CUSTOM-0002', 'ORD0002', 'ORDER-0002');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0003', 'CUSTOM-0003', 'ORD0003', 'ORDER-0003');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0004', 'CUSTOM-0004', 'ORD0004', 'ORDER-0004');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0005', 'CUSTOM-0005', 'ORD0005', 'ORDER-0005');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0006', 'CUSTOM-0006', 'ORD0006', 'ORDER-0006');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0007', 'CUSTOM-0007', 'ORD0007', 'ORDER-0007');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0008', 'CUSTOM-0008', 'ORD0008', 'ORDER-0008');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0009', 'CUSTOM-0009', 'ORD0009', 'ORDER-0009');
+INSERT INTO CUSTOM_ITEM_REQUEST_ORDERS (Custom_ID, Custom_Ref_Number, Order_ID, Order_Ref_Number) 
+VALUES ('CUS0010', 'CUSTOM-0010', 'ORD0010', 'ORDER-0010');
+
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0001', 'CUSTOM-0001', 'FEE0001', 'FEEDBACK-0001');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0002', 'CUSTOM-0002', 'FEE0002', 'FEEDBACK-0002');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0003', 'CUSTOM-0003', 'FEE0003', 'FEEDBACK-0003');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0004', 'CUSTOM-0004', 'FEE0004', 'FEEDBACK-0004');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0005', 'CUSTOM-0005', 'FEE0005', 'FEEDBACK-0005');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0006', 'CUSTOM-0006', 'FEE0006', 'FEEDBACK-0006');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0007', 'CUSTOM-0007', 'FEE0007', 'FEEDBACK-0007');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0008', 'CUSTOM-0008', 'FEE0008', 'FEEDBACK-0008');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0009', 'CUSTOM-0009', 'FEE0009', 'FEEDBACK-0009');
+INSERT INTO CUSTOM_ITEM_REQUEST_FEEDBACK (Custom_ID, Custom_Ref_Number, Feedback_ID, Feedback_Ref_Number)
+VALUES ('CUS0010', 'CUSTOM-0010', 'FEE0010', 'FEEDBACK-0010');
+
+
